@@ -27,7 +27,7 @@ const Home: NextPage = () => {
 
   console.log(player);
   const { loading, error, success, message, handleSubmit } = useMailChimpForm(
-    "https://truthgym.us17.list-manage.com/subscribe/post?u=d195bca7b15b09591a2869256&amp;id=b70d45ae17&amp;f_id=00fd51e0f0"
+    "https://truthgym.us17.list-manage.com/subscribe/post?u=d195bca7b15b09591a2869256&amp;id=b70d45ae17&amp;v_id=3766&amp;f_id=00fd51e0f0"
   );
   const { fields, handleFieldChange } = useFormFields({
     EMAIL: "",
