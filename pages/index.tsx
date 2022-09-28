@@ -9,6 +9,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useFormFields, useMailChimpForm } from "use-mailchimp-form";
 import { useCookies } from "react-cookie";
 import BookNow from "../components/BookNow";
+import Carousel from "nuka-carousel";
 
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
@@ -33,6 +34,8 @@ const Home: NextPage = () => {
     EMAIL: "",
     tags: "6449266",
   });
+
+  const testimonials = [1, 2, 3, 4, 5, 6, 7, 8];
 
   const emailRegex = new RegExp("/^S+@S+.S+$/");
   return (
@@ -315,6 +318,30 @@ const Home: NextPage = () => {
               <div className="md:ml-auto">
                 <Call />
               </div>
+            </div>
+            <div className="mb-20">
+              <h2 className="mt-10 mb-10 text-4xl text-center font-semibold text-navy">
+                Our Results
+              </h2>
+              <Carousel
+                wrapAround={true}
+                slidesToShow={2}
+                cellSpacing={20}
+                withoutControls={true}
+                autoplay={true}
+                autoplayInterval={3000}
+              >
+                {testimonials.map((testimonial) => (
+                  <Image
+                    key={testimonial}
+                    src={`/img/${testimonial}.jpg`}
+                    alt="transformation"
+                    height={350}
+                    width={400}
+                    objectFit="cover"
+                  />
+                ))}
+              </Carousel>
             </div>
           </div>
         </div>
