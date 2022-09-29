@@ -35,7 +35,7 @@ const Home: NextPage = () => {
     tags: "6449266",
   });
 
-  const testimonials = [1, 2, 3, 4, 5, 6, 7, 8];
+  const testimonials = [1, 2, 3, 4, 5, 6, 7];
 
   const emailRegex = new RegExp("/^S+@S+.S+$/");
   return (
