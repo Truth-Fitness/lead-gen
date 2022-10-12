@@ -17,8 +17,7 @@ const Home: NextPage = () => {
   const [popup, setPopup] = useState(false);
   const [email, setEmail] = useState("");
   const [cookies, setCookie] = useCookies(["confirmed"]);
-  //@ts-ignore
-  const player = useRef<ReactPlayer>();
+
   useEffect(() => {
     const use = async () => {
       (await import("tw-elements")).default;
@@ -26,7 +25,6 @@ const Home: NextPage = () => {
     use();
   }, []);
 
-  console.log(player);
   const { loading, error, success, message, handleSubmit } = useMailChimpForm(
     "https://truthgym.us17.list-manage.com/subscribe/post?u=d195bca7b15b09591a2869256&amp;id=b70d45ae17&amp;v_id=3766&amp;f_id=00fd51e0f0"
   );
@@ -34,6 +32,17 @@ const Home: NextPage = () => {
     EMAIL: "",
     tags: "6449266",
   });
+
+  const handleOpen = () => {
+    const timer = setTimeout(() => {
+      setPopup(true);
+    }, 10000);
+    return () => clearTimeout(timer);
+  };
+
+  useEffect(() => {
+    handleOpen();
+  }, []);
 
   const testimonials = [1, 2, 3, 4, 5, 6, 7, 8];
 
@@ -74,15 +83,11 @@ const Home: NextPage = () => {
                 <div className="w-full flex justify-center mb-5">
                   <div className=" pt-[51.25%] md:pt-[46.25%] relative w-11/12 md:w-10/12 lg:w-9/12 lg:pt-[42.5%]">
                     <ReactPlayer
-                      url="https://youtu.be/J7Ay5zd41wg"
+                      url="https://youtu.be/wICQISSNFyQ"
                       light="/videothumbnail.jpg"
                       width="100%"
                       height="100%"
                       className="absolute top-0 left-0"
-                      onClickPreview={() =>
-                        !cookies.confirmed && setPopup(true)
-                      }
-                      ref={player}
                     />
                   </div>
                 </div>
@@ -91,14 +96,18 @@ const Home: NextPage = () => {
                     id="myModal"
                     className="fixed z-50 pt-[100px] left-0 top-0 w-full h-full overflow-auto bg-white bg-opacity-40"
                   >
-                    <div className="bg-white m-auto p-5 md:w-8/12">
+                    <div className="bg-white m-auto p-5 md:w-8/12 shadow-lg ring-1 ring-black ring-opacity-5 md:rounded">
                       <p className="text-black mb-4">
-                        Hey, to watch the video put your email address in here:
+                        Hey, I hope you are enjoying the video. We would love to
+                        get your feedback on it and in return we have FOUR very
+                        special FREE gifts (worth £180) ready for you
+                        <br />
+                        <br />
+                        Enter your email here to claim your FREE gifts
                       </p>
                       <div className="text-black">
                         <form
                           onSubmit={(event) => {
-                            console.log("test");
                             event.preventDefault();
                             handleSubmit(fields);
                             setCookie("confirmed", true);
@@ -140,15 +149,9 @@ const Home: NextPage = () => {
                           {success && message}
                         </form>
                       </div>
-                      <p className="text-black mb-4">
-                        {
-                          "Don't worry, we won't bombard you with spam, we'll just ask for some feedback in a couple of days time."
-                        }
-                      </p>
                       <button
                         onClick={() => {
                           setPopup(false);
-                          player.current?.retry();
                         }}
                         className="inline-block px-6 py-2.5 border-2 border-turq text-turq font-bold text-sm leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
                       >
