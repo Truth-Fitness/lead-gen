@@ -36,7 +36,7 @@ const Home: NextPage = () => {
   const handleOpen = () => {
     const timer = setTimeout(() => {
       setPopup(true);
-    }, 10000);
+    }, 25000);
     return () => clearTimeout(timer);
   };
 
