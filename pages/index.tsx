@@ -33,16 +33,16 @@ const Home: NextPage = () => {
     tags: "6449266",
   });
 
-  const handleOpen = () => {
-    const timer = setTimeout(() => {
-      setPopup(true);
-    }, 10000);
-    return () => clearTimeout(timer);
-  };
+  // const handleOpen = () => {
+  //   const timer = setTimeout(() => {
+  //     !cookies && setPopup(true);
+  //   }, 30000);
+  //   return () => clearTimeout(timer);
+  // };
 
-  useEffect(() => {
-    handleOpen();
-  }, []);
+  // useEffect(() => {
+  //   handleOpen();
+  // }, []);
 
   const testimonials = [1, 2, 3, 4, 5, 6, 7];
 
@@ -87,7 +87,9 @@ const Home: NextPage = () => {
                       width="100%"
                       height="100%"
                       className="absolute top-0 left-0"
-                      onClickPreview={(e) => console.log(e)}
+                      playing={true}
+                      onPause={() => setPopup(true)}
+                      onEnded={() => setPopup(true)}
                     />
                   </div>
                 </div>
