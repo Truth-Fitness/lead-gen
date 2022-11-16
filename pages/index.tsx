@@ -10,6 +10,7 @@ import { useFormFields, useMailChimpForm } from "use-mailchimp-form";
 import { useCookies } from "react-cookie";
 import BookNow from "../components/BookNow";
 import Carousel from "nuka-carousel";
+import { useIntersection } from "../hooks/useIntersection";
 
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
   const [popup, setPopup] = useState(false);
   const [email, setEmail] = useState("");
   const [cookies, setCookie] = useCookies(["confirmed"]);
+  const ref = useRef(null);
 
   useEffect(() => {
     const use = async () => {
@@ -24,6 +26,16 @@ const Home: NextPage = () => {
     };
     use();
   }, []);
+  const inViewport = useIntersection(ref, "0px");
+
+  useEffect(() => {
+    if (inViewport) {
+      // show popup after 5 seconds
+      setTimeout(() => {
+        setPopup(true);
+      }, 2000);
+    }
+  }, [inViewport]);
 
   const { loading, error, success, message, handleSubmit } = useMailChimpForm(
     "https://truthgym.us17.list-manage.com/subscribe/post?u=d195bca7b15b09591a2869256&amp;id=b70d45ae17&amp;v_id=3766&amp;f_id=00fd51e0f0"
@@ -196,7 +208,7 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className="flex flex-wrap items-center justify-center mt-5 max-w-4xl w-full">
-            <div className="w-full">
+            <div className="w-full" ref={ref}>
               <h2 className="text-4xl font-bold text-navy mb-5 text-center">
                 We have your back!
               </h2>
