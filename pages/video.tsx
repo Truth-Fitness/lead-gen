@@ -43,7 +43,7 @@ const Home: NextPage = () => {
 
       <main>
         <div
-          className="relative overflow-hidden bg-no-repeat bg-cover md:h-[650px] h-[600px]"
+          className="relative overflow-hidden bg-no-repeat bg-cover md:h-[700px] h-[600px]"
           style={{
             backgroundPosition: "50%",
             backgroundImage: "url(/bgimage.webp)",
@@ -55,8 +55,11 @@ const Home: NextPage = () => {
           >
             <div className="flex justify-center items-center h-full max-w-5xl">
               <div className="text-center text-white px-6 md:px-12">
-                <h1 className="text-5xl font-bold mt-0 mb-6 text-turq">
-                  Top Five Secrets to Rapid Weightloss
+                <h1 className="text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-turq to-[#003f7e] pb-2 mt-6">
+                  Top Five Secrets to
+                </h1>
+                <h1 className="text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-turq to-[#003f7e] pb-4">
+                  Rapid Weightloss
                 </h1>
                 <h3 className="text-xl font-bold mb-8">
                   Cameron Harris, the co-founder of TRUTH Fitness, is joined by

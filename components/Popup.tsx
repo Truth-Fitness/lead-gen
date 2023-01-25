@@ -13,7 +13,7 @@ export default function Popup({
 }) {
   const [cookies, setCookie] = useCookies(["enrolled"]);
   const { loading, error, success, message, handleSubmit } = useMailChimpForm(
-    "https://truthgym.us17.list-manage.com/subscribe/post?u=d195bca7b15b09591a2869256&amp;id=b70d45ae17&amp;v_id=3766&amp;f_id=00fd51e0f0"
+    "https://truthfitness.us17.list-manage.com/subscribe/post?u=d195bca7b15b09591a2869256&amp;id=12ff7a1116&amp;f_id=005150e0f0"
   );
   const { fields, handleFieldChange } = useFormFields({
     EMAIL: "",
