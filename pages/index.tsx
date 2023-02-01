@@ -1,19 +1,5 @@
-import type { NextPage } from "next";
+import { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
-import { MdCheck } from "react-icons/md";
-import Excercise from "../components/Excercise";
-import Call from "../components/Call";
-import dynamic from "next/dynamic";
-import React, { useEffect, useRef, useState } from "react";
-import { useFormFields, useMailChimpForm } from "use-mailchimp-form";
-import { useCookies } from "react-cookie";
-import BookNow from "../components/BookNow";
-import Carousel from "nuka-carousel";
-import { useIntersection } from "../hooks/useIntersection";
-import Popup from "../components/Popup";
-import Router from "next/router";
-const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 const Home: NextPage = () => {
   return (

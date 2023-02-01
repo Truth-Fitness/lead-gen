@@ -26,3 +26,28 @@ a {
   content: "✓";
   margin-right: 8px;
 }
+
+.custom-shape-divider-bottom-1675285807 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1675285807 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 57px;
+}
+
+.custom-shape-divider-bottom-1675285807 .shape-fill {
+  fill: #ffffff;
+}
+
+.steps .step:before {
+  background-color: #80d0d0;
+}

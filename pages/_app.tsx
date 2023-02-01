@@ -22,11 +22,11 @@ function MyApp({ Component, pageProps }: AppProps) {
               });
           `}
       </Script>
-      <nav className="navbar navbar-expand-lg shadow-md py-2 bg-white relative flex items-center w-full justify-between">
+      <nav className="navbar navbar-expand-lg shadow-lg py-2 bg-gray-800 relative flex items-center w-full justify-between">
         <div className="px-6 w-full flex flex-wrap items-center justify-between">
           <div className="flex items-center">
             <Image
-              src="/logo.png"
+              src="/logo-white.png"
               alt="logo"
               width={120}
               height={45}
