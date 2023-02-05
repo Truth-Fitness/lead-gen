@@ -19,7 +19,9 @@ import EmailForm from "../components/EmailForm";
 import { TextContainer } from "../components/TextContainer";
 import { Blob } from "../components/Blob";
 import Presentation from "../components/Presentation";
-
+import Feature from "../components/Feature";
+import features from "../public/features.json";
+import ResultsComparison from "../components/ResultsComparison";
 const Home: NextPage = () => {
   return (
     <div>
@@ -44,7 +46,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main className="bg-slate-50">
         <div className="bg-gray-900 relative w-screen">
           <div className="flex items-center flex-wrap-reverse px-5 pt-10 pb-24 max-w-[1600px] m-auto">
             <div className="lg:w-6/12 w-full">
@@ -116,7 +118,7 @@ const Home: NextPage = () => {
             </svg>
           </div>
         </div>
-        <div className="flex justify-center flex-wrap mt-10 md:mb-20 items-center p-4">
+        <div className="flex justify-center flex-wrap mt-10 md:mb-20 items-center p-4 bg-slate-50">
           <div className="w-full lg:w-5/12">
             <p className="text-red font-bold mb-5">
               FED UP WITH FEELING THIS WAY?
@@ -173,6 +175,91 @@ const Home: NextPage = () => {
           </div>
           <div className="w-full md:w-9/12 p-4 my-6">
             <Presentation />
+          </div>
+          <div className="max-w-[1300px]">
+            <h2 className="text-4xl font-bold text-navy text-center my-4">
+              THE SIX-WEEK RAPID RESULT SYSTEM{" "}
+            </h2>
+            <p className="text-center mb-6 mx-6 text-lg">
+              Transform Your Body, your health and your confidence with TRUTH
+              Fitness®️.
+              <br />
+              <br />
+              Get ready for real results with our comprehensive, user-friendly
+              system. Our expert team provides the tools and resources to track
+              progress, stay motivated, and reach your fitness goals in six
+              weeks. Join us now and experience the TRUTH Fitness®️ difference
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-3  gap-4 ">
+              {features.map((feature) => (
+                <Feature key={feature.id} {...feature} />
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="relative bg-gradient-to-t from-black to-navy mt-10">
+          <div className="custom-shape-divider-top-1675529624">
+            <svg
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
+                className="shape-fill"
+              ></path>
+            </svg>
+          </div>
+          <div className="flex justify-center ">
+            <div className="max-w-[1300px]">
+              <h2 className="text-4xl font-bold text-white text-center mt-20 mx-2">
+                <span className="text-transparent bg-clip-text bg-gradient-to-b from-turq to-turq-dark">
+                  Rapid, Sustainable Results
+                </span>{" "}
+                for Business Owners and Senior Executives
+              </h2>
+              <div className="flex  flex-wrap mt-10">
+                <div className=" pt-[48.25%] md:pt-[25.25%] mx-8 relative w-full md:w-5/12 lg:pt-[22.5%]">
+                  <ReactPlayer
+                    url="https://youtu.be/1UJ9gKSzanQ"
+                    width="100%"
+                    height="100%"
+                    className="absolute top-0 left-0"
+                    playing={true}
+                  />
+                </div>
+                <div className="p-8 w-full md:w-6/12 lg:mt-10 mt-10">
+                  <blockquote className="text-white ">
+                    {`As a Founder and CEO of 2 companies, when I first reached
+                    out to Cameron and his team at TRUTH, I was dubious about
+                    how I would fit the Rapid Result System into my very busy
+                    daily schedule. I'm pleased to say that my concerns were
+                    unfounded. The team were excellent and flexible, and the
+                    coaching worked around my diary. As a result, I feel much
+                    healthier and fitter than I have been in the past 25 years, so
+                    a big thank you to the TRUTH team, and long may it continue.`}
+                  </blockquote>
+                  <div className="mt-4 flex items-center gap-4">
+                    <Image
+                      src="/mark_headshot.jpg"
+                      alt="Picture of the author"
+                      height={60}
+                      width={60}
+                      objectFit="cover"
+                      style={{ borderRadius: "50%" }}
+                    />
+                    <p className="text-sm text-slate-200 ">
+                      Mark Balaam
+                      <br /> CEO and Founder Sarax and Imabi
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="py-10">
+            <ResultsComparison />
           </div>
         </div>
       </main>

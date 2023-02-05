@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Expert consultation",
+    "description": "Allowing us to understand your needs and overcome challenges.",
+    "image": "/team/craig.jpg"
+  },
+  {
+    "id": 2,
+    "title": "A tailored programme",
+    "description": "That feels manageable but challenges you enough to build momentum.",
+    "image": "/food.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Coaching calls",
+    "description": "The head coach is here to guide and support you every step of the way.",
+    "image": "/yoga.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Accountability",
+    "description": "Ensuring you stay on track as long as you need to hit your goals.",
+    "image": "/laptop.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Access to the TRUTH Fitness®️ team",
+    "description": "This offers the ultimate level of flexibility so that nothing stops your results",
+    "image": "/ipad.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Online system",
+    "description": "This means that travel, events and hotel stays are never an issue",
+    "image": "/IMG_1094.jpg"
+  }
+]

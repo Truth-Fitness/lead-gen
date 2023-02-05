@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Geoff",
+    "description": "Lost 7 Kilos and dropped two shirt sizes in 6 weeks",
+    "before": "geoff-before.jpg",
+    "after": "geoff-after.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Angus",
+    "description": "Dropped 6% body fat and three belt notches in just 6 weeks",
+    "before": "angus-before.jpg",
+    "after": "angus-after.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Mark",
+    "description": "Lost 11 Kilos in 6 weeks and went on to lose 22 Kilos total in 12 weeks",
+    "before": "mark-before.jpg",
+    "after": "mark-after.jpg"
+  }
+]
