@@ -41,6 +41,7 @@ module.exports = {
       fontFamily: {
         sans: ["Montserrat", "sans-serif"],
         serif: ["Bebas Neue", "cursive"],
+        impact: ["Oswald", "sans-serif"],
       },
     },
   },

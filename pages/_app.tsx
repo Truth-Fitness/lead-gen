@@ -4,7 +4,14 @@ import Image from "next/image";
 import { useEffect } from "react";
 import Script from "next/script";
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps, router }: AppProps) {
+  if ([`/news`].includes(router.pathname)) {
+    return (
+      <div className="bg-turq h-screen">
+        <Component {...pageProps} />
+      </div>
+    );
+  }
   return (
     <div>
       <Script
