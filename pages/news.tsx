@@ -1,6 +1,7 @@
 import { NextPage } from "next";
 import EmailForm from "../components/EmailForm";
-
+import { TestimonialCard } from "../components/TestimonialCard";
+import testimonials from "../data/testimonials.json";
 const News: NextPage = () => {
   return (
     <main className="max-w-[1200px] m-auto p-4">
@@ -12,8 +13,18 @@ const News: NextPage = () => {
         <h3 className=" text-2xl md:text-3xl mt-8 mb-4">
           Join 3,000+ high performers in our weekly newsletter
         </h3>
-        <EmailForm buttonColor={"black"} center buttonLabel="Subscribe" />
+        <EmailForm
+          buttonColor={"black"}
+          center
+          buttonLabel="Subscribe"
+          redirect
+        />
       </div>
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 content-center mt-8">
+        {testimonials.map((testimonial) => (
+          <TestimonialCard testimonial={testimonial} key={testimonial.id} />
+        ))}
+      </div> */}
     </main>
   );
 };

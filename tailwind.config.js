@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  plugins: [require("tw-elements/dist/plugin"), require("daisyui")],
+  plugins: [require("tw-elements/dist/plugin")],
   daisyui: {
     themes: [
       {

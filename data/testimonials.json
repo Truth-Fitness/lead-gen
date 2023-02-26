@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "title": "CEO",
+    "image": "/headshots/david_wheldon.jpg",
+    "testimonial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, nisl eget ultricies tincidunt, nunc nisl aliquam massa, eget aliquam nisl nisl sit amet nisl."
+  },
+  {
+    "id": 2,
+    "name": "Jane Doe",
+    "title": "CTO",
+    "image": "/headshots/david_wheldon.jpg",
+    "testimonial": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, nisl eget ultricies tincidunt, nunc nisl aliquam massa, eget aliquam nisl nisl sit amet nisl."
+  }
+]

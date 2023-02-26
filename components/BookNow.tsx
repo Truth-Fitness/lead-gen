@@ -84,6 +84,7 @@ export default function BookNow() {
                     placeholder="Name"
                     required
                     className="form-control
+                     w-full
                             block
                             px-3
                             py-1.5
@@ -104,6 +105,7 @@ export default function BookNow() {
                     placeholder="Phone"
                     required
                     className="form-control
+                    w-full
                             block
                             px-3
                             py-1.5
@@ -123,7 +125,7 @@ export default function BookNow() {
               <div className="modal-footer flex flex-shrink-0 gap-4 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
                 <button
                   type="button"
-                  className=" px-6 py-2.5 bg-gray-400 text-white font-medium text-sm leading-tight uppercase rounded shadow-md hover:bg-gray-500 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out"
+                  className=" px-6 py-2.5 bg-gray-200 text-gray-500 font-medium text-sm leading-tight uppercase rounded shadow-md hover:bg-gray-500 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out"
                   data-bs-dismiss="modal"
                 >
                   Close

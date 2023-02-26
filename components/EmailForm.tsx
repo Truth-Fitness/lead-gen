@@ -1,13 +1,17 @@
+import Router from "next/router";
+import { useEffect } from "react";
 import { useFormFields, useMailChimpForm } from "use-mailchimp-form";
 
 export default function EmailForm({
   buttonColor = "turq",
   center = false,
   buttonLabel = "Access Now",
+  redirect = false,
 }: {
   buttonColor?: "black" | "turq";
   center?: boolean;
   buttonLabel?: string;
+  redirect?: boolean;
 }) {
   const { loading, error, success, message, handleSubmit } = useMailChimpForm(
     "https://truthfitness.us17.list-manage.com/subscribe/post?u=d195bca7b15b09591a2869256&amp;id=12ff7a1116&amp;f_id=005150e0f0"
@@ -17,6 +21,12 @@ export default function EmailForm({
     FNAME: "",
     LNAME: "",
     tags: "6449266",
+  });
+
+  useEffect(() => {
+    if (success && redirect) {
+      Router.push("/thankyou");
+    }
   });
 
   return (

@@ -1,4 +1,4 @@
-import results from "./results.json";
+import results from "../data/results.json";
 import { Result } from "../types/results";
 import { useState } from "react";
 import Image from "next/image";
