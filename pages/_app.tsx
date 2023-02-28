@@ -7,7 +7,7 @@ import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 function MyApp({ Component, pageProps, router }: AppProps) {
   if ([`/news`].includes(router.pathname)) {
     return (
-      <div className="bg-turq h-screen">
+      <div className="bg-turq">
         <Component {...pageProps} />
       </div>
     );
