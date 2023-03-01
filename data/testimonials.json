@@ -1,13 +1,21 @@
 [
   {
     "id": 1,
+    "name": "Robert Johnston",
+    "date": "Feb 23, 2023",
+    "title": "Head of Marine and Energy at DNV GL",
+    "image": "/headshots/Robert Johnston.jpeg",
+    "testimonial": "Met Cameron and the team in January. Everyone has been fully behind me since day one and really helped me to achieve my original goals of losing weight and getting fitter. The service does not end there though as they have also provided me lots of invaluable knowledge and habits that will keep in good health long into the future. I can not recommend them highly enough. Totally professional and so knowledgeable. If you commit to their programme, then you can’t fail to be rewarded personally."
+  },
+  {
+    "id": 2,
     "name": "Nicholas McAllister",
     "date": "Feb 21, 2023",
     "image": "/headshots/Nicholas McAllister.jpeg",
     "testimonial": "Cameron and his team have a strong knowledge in both fitness and nutrition. I recently completed the 6 week fitness challenge, and have lost just over 8kg. IT WORKS. The accountability is key. The flexibility of remote PT sessions helps you work around your diary on an adhoc basis, which really helps as we have a young kid at home and work hours can change day to day. If you go ahead with the 6 week programme and buy into the nutrition and fitness you will get results, 100%."
   },
   {
-    "id": 2,
+    "id": 3,
     "name": "Ian Worthington",
     "date": "Feb 16, 2023",
     "title": "GymWolfPT",
@@ -15,66 +23,14 @@
     "testimonial": "Cameron is a truly inspirational guy who I admire and respect, not just in the ‘fitness world’ - but in every aspect of life. What he and his team at TRUTH are doing is really brilliant and groundbreaking. I highly recommend Cameron, and all that he does."
   },
   {
-    "id": 3,
-    "name": "Courtney Fumarola",
-    "date": "Nov 29, 2022",
-    "image": "/headshots/Courtney Fumarola.jpeg",
-    "testimonial": "Cameron has great knowledge about all things health and fitness and how to reach your goals as a busy business owner. Cameron carried out a food intolerance test for me which has been extremely helpful in understanding my body and how it reacts to certain foods - this kind of information is invaluable and I’m extremely pleased with the service Cameron has provided."
-  },
-  {
     "id": 4,
-    "name": "Shaun Ramazannezhad",
-    "date": "Nov 29, 2022",
-    "title": "LLB DipPFS",
-    "image": "/headshots/Shaun Ramazannezhad LLB DipPFS .jpeg",
-    "testimonial": "I attended an event in which Cameron gave an overview of his approach and business. The event was very insightful and it was very clear that Cameron was both passionate and knowledge about all aspects of health and fitness. He was also very easy to talk to which I believe is a very important quality when dealing with clients. If you are looking to improve your health and fitness, I would definitely recommend having a chat with Cameron!"
-  },
-  {
-    "id": 5,
-    "name": "Raghav Parkash",
-    "date": "Nov 23, 2022",
-    "image": "/headshots/Raghav Parkash.jpeg",
-    "testimonial": "Cameron is an absolute ASSET to have in your corner. If you are a busy leader working in a high pressured environment, you need TRUTH in your life! It may just be one of the best decisions you can ever make. Given my lifestyle with a hundred thousand things happening in any moment, it's easy to forget about the one thing that allows me to be my very best, that is my health, energy & vitality. Working with Cameron has been the very difference I have needed. In such a short period of time, Cameron was able to identify what is causing and flaring up my injuries but also what small dietary shifts I can make right now to transform my health overall in a very short period of time. I'm grateful to have the awareness I do which is having such a profound impact on my energy levels while working and my overall sharpness and effectiveness. I feel better and proud of the steps I have put in place and the conscious choices I can now make! Cameron, to you and your team, I can't thank you all enough!"
-  },
-  {
-    "id": 11,
-    "name": "Miranda Chadwick",
-    "date": "July 19, 2022",
-    "image": "/headshots/Miranda Chadwick.jpeg",
-    "linkedIn": "https://www.linkedin.com/in/miranda-chadwick-0896533",
-    "testimonial": "Have worked with a few trainers from Truth, all with a great positive energy. Reliable and flexible in their approach. We use them for team workouts and we always benefit immediately from the feel good factor. Recommended."
-  },
-  {
-    "id": 6,
     "name": "Ryan Burville",
     "date": "October 3, 2022",
     "image": "/headshots/Ryan Burville.jpeg",
     "testimonial": "Highly Recommend Truth Fitness and Cameron. Best programme I have ever signed up for and have achieved instant results. If you are considering using Truth fitness, I would not hesitate in recommending them. Worth every penny."
   },
   {
-    "id": 7,
-    "name": "Lucas Howman",
-    "date": "October 1, 2022",
-    "image": "/headshots/Lucas Howman.jpeg",
-    "testimonial": "Working with Cam and the team has been great. They've helped me achieve the rapid results i was looking for as well as building long term habits to improve my health and fitness. I can't recommend Cam's professional and caring approach more highly."
-  },
-  {
-    "id": 8,
-    "name": "Chris Caffrey",
-    "date": "August 9, 2022",
-    "image": "/headshots/Chris Caffrey.jpeg",
-    "testimonial": "Having got to know Cameron through Linkedin, I could see straight away that he was incredible at what he does. He is engaging, smart and works so well with his clients. He has a desire to be the best, but not just for him, so that he can get the best results for his clients, which you can see he does. TRUTH are leading the way in personal fitness and health for busy CEOs, Founders and business leaders. Congratulations!"
-  },
-  {
-    "id": 9,
-    "name": "Martin Walsh",
-    "date": "August 4, 2022",
-    "image": "/headshots/Martin Walsh.jpeg",
-    "linkedIn": "https://www.linkedin.com/in/martin-walsh-6b620543",
-    "testimonial": "I was feeling lethargic, was overweight and unfit. I was struggling to see how I could fit in exercise around work, but was a regular viewer of Cameron’s content and the success of the Truth fitness 6 week program. I reached out to Cameron and had a consultation about my goals and objectives and how the Truth team could build a program around my work and family life. I must add that he and the team did all this with an 8 hour time difference as I live and work in Singapore. The results have been phenomenal, my energy levels are up, my productivity and focus at work have improved and I lost my target weight. None of this would have been possible without Cameron and in particular Craig Simons and his encyclopaedic knowledge on fitness and nutrition combined with his infectious passion for his clients to succeed. All of this is delivered through a superb app that tracks your workouts in a user friendly way backed up by personalised communications and one to one’s with the team that gives you the guidance, expertise and encouragement to attain your goals. I cannot recommend the team at Truth more highly! Thank you Cameron and Craig and I’m already enjoying the next phase of my expert coaching from the team."
-  },
-  {
-    "id": 10,
+    "id": 5,
     "name": "Hayley Spedding",
     "date": "July 21, 2022",
     "image": "/headshots/Hayley Spedding.jpeg",
@@ -82,10 +38,51 @@
     "testimonial": "17 weeks post full knee replacement I wasn’t sure how to make better progress beyond physio appointments and my own attempts at a gym programme. I had a partial knee replacement on the other knee 6 years ago and years of trying to keep weight down, improve muscle strength, give time to my busy career and spend time with family felt tough at times. Cam listened, truly listened, and told me he and his team could definitely make a difference. And quickly. I met Craig and with his expertise in nutrition, his planning of a bespoke gym programme and his genuine support, I haven’t looked back. 10 days in to a 6 week rapid result programme and I’m sleeping better, gym workouts are delivering real strength benefits, pain is easing, eating better and in a week I’ve lost 9lbs. My life is still busy but I now feel happier, more confident in my post op progress and healthier. I cannot wait to see what the next few weeks bring, and then beyond. It’s the best investment I’ve made in me in a long time. And I’m so pleased I’ve done it with Truth Fitness. No more excuses. Just doing it."
   },
   {
-    "id": 12,
-    "name": "Tamara Gillan",
-    "date": "June 23, 2022",
-    "image": "/headshots/Tamara Gillan.jpeg",
-    "testimonial": "I wasn't sure I could fit it in, as my life is manic. I wasn't sure I could prioritise it as my son, my business, and my friends always win. But sometimes you have to prioritise yourself and health as it will help you be more everywhere else. The programme was effortlessly possible, fun and the accountability was a game changer for me. The Six Week Rapid Result System is the perfect programme for busy, stressed out business leaders like me. Thank you."
+    "id": 6,
+    "name": "David Wheldon OBE",
+    "title": "ex CMO RBS",
+    "date": "May 21, 2022",
+    "image": "/headshots/David Wheldon OBE.jpeg",
+    "testimonial": "When I first met Cam in January 2019 I was 98 kg, not sleeping well and stressed but after a health MOT, Cam and his team got me fighting fit , sleeping well and to 88kg , his very aptly named company Truth is full of talented folk who get you to achieve your goals, always tell it like it is and help you when it gets tough. Cam leads his team with quiet confidence , resilience, compassion, deep expertise and always with a smile, thank you Cam and looking forward to staying fit, leaner and stress free for a very very long time!"
+  },
+  {
+    "id": 7,
+    "name": "Eileen Taylor",
+    "title": "Non Executive Director Healthcare and Financial Services",
+    "date": "April 21, 2022",
+    "image": "/headshots/Eileen Taylor.jpeg",
+    "testimonial": "Cam and the team at Truth are brilliant to work with. They address the whole person. They are well informed, fun and genuinely nice people who motivate me to get results. They are flexible around work and accommodate me in different time zones. The organisation is professionally run and I would highly recommend them."
+  },
+  {
+    "id": 8,
+    "name": "Mark Balaam",
+    "title": "Chief Executive Officer at imabi and Sarax Limited",
+    "date": "April 19, 2022",
+    "image": "/headshots/Mark Balaam.jpeg",
+    "testimonial": "As a Founder and CEO of 2 companies, when I first reached out to Cameron and his team at TRUTH, I was dubious about how I would fit the Rapid Result System into my very busy daily schedule. I'm pleased to be able to say that my concerns were totally unfounded. The team was excellent, really flexible and the coaching worked around my diary. As a result, I feel much healthier and fitter than I have been in the past 25yrs, so big thank you to the TRUTH team and long may it continue."
+  },
+  {
+    "id": 9,
+    "name": "Dr. Corrie Jonn Block, PhD, DBA",
+    "title": "UAE's Top Business Coach",
+    "date": "August 24, 2021",
+    "image": "/headshots/Dr. Corrie Jonn Block, PhD, DBA.jpeg",
+    "testimonial": "You'd be crazy not to call these guys! Ignore their advice at your own peril. As a high performing executive, I've always struggled with my weight and fitness goals. It seems like the only thing in my life I can't absolutely crush on my own. Partnering with Cameron and Tony has been really impactful for me, and I'm happy to be able to recommend my executive coaching clients to them for activating their fitness and nutrition goals."
+  },
+  {
+    "id": 10,
+    "name": "Martin Devenish MBE",
+    "title": "Board Director S-RM",
+    "date": "July 27, 2021",
+    "image": "/headshots/Martin Devenish MBE.jpeg",
+    "testimonial": "I have been training with the guys at Truth for a couple of years now. What first impressed me was they took time to understand what I was looking to achieve, a bit different from when I first used personal trainers now that I am mid ‘50’s, and built a program focused on being structurally strong alongside nutrition advice. They have adapted well to a virtual offering since early 2020, providing flexibility and a range of coaches, to fit in with a busy work life. I can definitely say I feel healthier today than I would do without their support."
+  },
+  {
+    "id": 11,
+    "name": "Angus Kennedy",
+    "title": "Chief Technology Officer at Tysers",
+    "date": "May 18, 2021",
+    "image": "/headshots/Angus Kennedy.jpeg",
+    "testimonial": "I believe in TRUTH and the results speak for themselves."
   }
 ]

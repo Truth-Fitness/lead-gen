@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
       </div>
     );
   }
-  if ([`/ebook`].includes(router.pathname)) {
+  if ([`/ebook`, `/ebook_thank_you`].includes(router.pathname)) {
     return (
       <div>
         <Component {...pageProps} />

@@ -4,14 +4,14 @@ import { useCookies } from "react-cookie";
 import { MdClose } from "react-icons/md";
 import { useFormFields, useMailChimpForm } from "use-mailchimp-form";
 
-export default function Popup({
+export default function EbookPopup({
   setPopup,
   popup,
 }: {
   setPopup: (value: boolean) => void;
   popup: boolean;
 }) {
-  const [cookies, setCookie] = useCookies(["enrolled"]);
+  const [cookies, setCookie] = useCookies(["signedUpEbook"]);
   const { loading, error, success, message, handleSubmit } = useMailChimpForm(
     "https://truthfitness.us17.list-manage.com/subscribe/post?u=d195bca7b15b09591a2869256&amp;id=12ff7a1116&amp;f_id=005150e0f0"
   );
@@ -24,7 +24,8 @@ export default function Popup({
 
   useEffect(() => {
     if (success) {
-      setCookie("enrolled", true);
+      setCookie("signedUpEbook", true);
+      Router.push("/ebook_thank_you");
       setPopup(false);
     }
   }, [setCookie, setPopup, success]);
@@ -35,12 +36,15 @@ export default function Popup({
     return (
       <div
         id="myModal"
-        className="fixed z-50 pt-[100px] left-0 top-0 w-full h-full overflow-auto bg-black  bg-opacity-40"
+        className="fixed z-50 pt-[100px] left-0 top-0 w-full h-full overflow-auto bg-black bg-opacity-40"
       >
         <div className="bg-white m-auto p-5 w-fit shadow-lg ring-1 ring-black ring-opacity-5 md:rounded relative">
-          <h2 className="text-black mb-6 text-xl font-bold text-center">
-            Get Your Training Video
+          <h2 className="text-black text-3xl mb-2 font-bold text-center font-impact">
+            FREE EBOOK
           </h2>
+          <p className="text-center mb-5">
+            Enter your details below to get your free ebook.
+          </p>
           <div className="text-black">
             <form
               onSubmit={(event) => {
@@ -85,7 +89,7 @@ export default function Popup({
                 <div className="w-full flex justify-center">
                   <button
                     type="submit"
-                    className=" px-6 py-2.5 bg-turq text-white font-medium text-sm leading-tight uppercase rounded shadow-md hover:bg-turq-dark hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out"
+                    className=" px-6 py-2.5 w-full bg-turq text-white font-medium text-sm leading-tight uppercase rounded-full shadow-md hover:bg-turq-dark hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out"
                   >
                     Submit
                   </button>

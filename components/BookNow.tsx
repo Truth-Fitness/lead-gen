@@ -1,7 +1,15 @@
 import { useState } from "react";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 
-export default function BookNow() {
+type Props = {
+  buttonText?: string;
+  fullWidth?: boolean;
+};
+
+export default function BookNow({
+  buttonText = "Book Now",
+  fullWidth = false,
+}: Props) {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const { executeRecaptcha } = useGoogleReCaptcha();
 
@@ -9,14 +17,16 @@ export default function BookNow() {
     <div className="flex flex-col justify-center items-center">
       <button
         type="button"
-        className="inline-block px-6 py-2.5 border-2 border-turq text-turq font-bold text-lg leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+        className={`inline-block px-6 py-2.5 ${
+          fullWidth ? "w-full   " : ""
+        } text-white bg-turq rounded-full hover:bg-turq-dark font-bold text-lg leading-tight uppercase  focus:outline-none focus:ring-0 transition duration-150 ease-in-out cursor-pointer`}
         data-bs-toggle="modal"
         data-bs-target="#bookNowModal"
       >
-        Book Now
+        {buttonText}
       </button>
       <div
-        className="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+        className="modal fade fixed top-20 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
         id="bookNowModal"
         tabIndex={-1}
         aria-labelledby="exampleModalLabel"
@@ -123,17 +133,10 @@ export default function BookNow() {
                 </div>
               )}
               <div className="modal-footer flex flex-shrink-0 gap-4 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
-                <button
-                  type="button"
-                  className=" px-6 py-2.5 bg-gray-200 text-gray-500 font-medium text-sm leading-tight uppercase rounded shadow-md hover:bg-gray-500 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out"
-                  data-bs-dismiss="modal"
-                >
-                  Close
-                </button>
                 {!isSubmitted && (
                   <button
                     type="submit"
-                    className=" px-6 py-2.5 bg-turq text-white font-medium text-sm leading-tight uppercase rounded shadow-md hover:bg-turq-dark hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out"
+                    className=" px-6 py-2.5 bg-turq text-white font-medium text-sm leading-tight uppercase rounded-full w-full shadow-md hover:bg-turq-dark hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out"
                   >
                     Submit
                   </button>

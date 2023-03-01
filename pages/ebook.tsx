@@ -2,10 +2,13 @@ import { NextPage } from "next";
 import Image from "next/image";
 import { MdCheck, MdCheckCircle } from "react-icons/md";
 import { TestimonialCard } from "../components/TestimonialCard";
-import mainHero from "../public/MINvQ27TNSM0ZI7JAnTp_CONSISTENT_10K_MONTHS_800_1200px.png";
+import mainHero from "../public/ebook_cover.png";
 import testimonials from "../data/testimonials.json";
+import { useState } from "react";
+import EbookPopup from "../components/EbookPopup";
 
 const Ebook: NextPage = () => {
+  const [popup, setPopup] = useState(false);
   return (
     <div>
       <div className="max-w-[1100px] m-auto">
@@ -17,12 +20,12 @@ const Ebook: NextPage = () => {
           <span className="text-turq">FIVE SIMPLE STEPS</span>
         </h2>
         <div className="flex flex-wrap items-center gap-4 justify-between">
-          <div className="lg:w-6/12 w-full">
-            <div className="md:mx-3 mx-5 border-black border-8">
+          <div className="md:w-6/12 w-full">
+            <div className="md:mx-3 mx-5 shadow-lg md:shadow-2xl">
               <Image src={mainHero} alt="Picture of the author" />
             </div>
           </div>
-          <div className="lg:w-5/12 w-full mx-4">
+          <div className="md:w-5/12 w-full mx-4">
             <h3 className="text-black font-bold text-4xl font-impact my-6">{`WHAT'S IN THE EBOOK?`}</h3>
             <ul>
               <li className="flex items-center gap-4 text-xl font-bold my-2">
@@ -44,6 +47,7 @@ const Ebook: NextPage = () => {
             <button
               type="button"
               className=" py-4 px-6 text-white bg-black rounded-full font-bold  text-xl mt-5"
+              onClick={() => setPopup(true)}
             >
               SEND ME THE FREE EBOOK
             </button>
@@ -59,6 +63,7 @@ const Ebook: NextPage = () => {
           </div>
         </div>
       </div>
+      <EbookPopup popup={popup} setPopup={setPopup} />
     </div>
   );
 };
