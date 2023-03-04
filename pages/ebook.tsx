@@ -34,7 +34,7 @@ const Ebook: NextPage = () => {
               </li>
               <li className="flex items-center gap-4 text-xl font-bold my-2">
                 <MdCheckCircle className="w-8 h-8 text-[#00d26a] flex-shrink-0" />
-                How to lose weight, improve energy fast
+                How to lose weight + improve energy fast
               </li>
               <li className="flex items-center gap-4 text-xl font-bold my-2">
                 <MdCheckCircle className="w-8 h-8 text-[#00d26a] flex-shrink-0" />
