@@ -20,14 +20,17 @@ export default function EmailForm({
     EMAIL: "",
     FNAME: "",
     LNAME: "",
-    tags: "6449266",
   });
 
   useEffect(() => {
     if (success && redirect) {
+      console.log(error, success, message);
       Router.push("/thankyou");
     }
   });
+
+  const inputStyle =
+    "form-control grow max-w-lg block h-12 px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-turq focus:outline-none ";
 
   return (
     <form
@@ -37,7 +40,29 @@ export default function EmailForm({
       }}
       autoComplete="on"
     >
-      <div className={`flex ${center ? "justify-center" : ""}`}>
+      <div className="flex flex-wrap gap-4 mb-4">
+        <input
+          id="FNAME"
+          type="text"
+          autoComplete="given-name"
+          value={fields.FNAME as any}
+          required
+          placeholder="First Name"
+          onChange={handleFieldChange}
+          className={inputStyle + " rounded"}
+        />
+        <input
+          id="LNAME"
+          type="text"
+          autoComplete="family-name"
+          value={fields.LNAME as any}
+          required
+          placeholder="Last Name"
+          onChange={handleFieldChange}
+          className={inputStyle + " rounded"}
+        />
+      </div>
+      <div className={`flex ${center ? "" : ""}`}>
         <input
           type="email"
           id="EMAIL"
@@ -47,7 +72,7 @@ export default function EmailForm({
           value={fields.EMAIL as string}
           required
           onChange={handleFieldChange}
-          className="form-control grow max-w-lg block h-12 px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded-l transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-turq focus:outline-none md:min-w-[400px]"
+          className={inputStyle + " rounded-l md:min-w-[400px]"}
         />
         <button
           type="submit"
@@ -59,17 +84,17 @@ export default function EmailForm({
         >
           {loading ? "Submitting" : buttonLabel}
         </button>
-        {error && (
-          <div className="text-red-500 text-sm mt-2">
-            {"Something went wrong"}
-          </div>
-        )}
-        {success && (
-          <div className="text-green-800 text-sm mt-2">
-            {"You have been subscribed!"}
-          </div>
-        )}
       </div>
+      {error && (
+        <div className="text-red-500 text-sm mt-2">
+          {"Something went wrong"}
+        </div>
+      )}
+      {success && (
+        <div className="text-green-800 text-sm mt-2">
+          {"You have been subscribed!"}
+        </div>
+      )}
     </form>
   );
 }
