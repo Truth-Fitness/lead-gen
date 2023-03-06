@@ -12,6 +12,8 @@ export default function BookNow({
 }: Props) {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const { executeRecaptcha } = useGoogleReCaptcha();
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
 
   return (
     <div className="flex flex-col justify-center items-center">
@@ -59,10 +61,15 @@ export default function BookNow({
                   method: "POST",
                   body: JSON.stringify(object),
                 });
+                setLoading(true);
                 const json = await res.json();
                 if (json.success) {
+                  setLoading(false);
                   form.reset();
                   setIsSubmitted(true);
+                } else {
+                  setLoading(false);
+                  setError(true);
                 }
               }}
             >
@@ -132,13 +139,21 @@ export default function BookNow({
                   />
                 </div>
               )}
+              {error && (
+                <div className="modal-body relative p-4 flex flex-wrap gap-2">
+                  <h2>
+                    There was an error sending your details, please try again
+                    later
+                  </h2>
+                </div>
+              )}
               <div className="modal-footer flex flex-shrink-0 gap-4 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
                 {!isSubmitted && (
                   <button
                     type="submit"
                     className=" px-6 py-2.5 bg-turq text-white font-medium text-sm leading-tight uppercase rounded-full w-full shadow-md hover:bg-turq-dark hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out"
                   >
-                    Submit
+                    {loading ? "Sending..." : "Send"}
                   </button>
                 )}
               </div>

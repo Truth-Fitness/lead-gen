@@ -8,6 +8,21 @@ function MyApp({ Component, pageProps, router }: AppProps) {
   if ([`/news`].includes(router.pathname)) {
     return (
       <div className="bg-turq">
+        <Script
+          strategy="lazyOnload"
+          src={`https://www.googletagmanager.com/gtag/js?id=G-ZQG9EXSZ30`}
+          id="googleAnalytics1"
+        />
+        <Script strategy="lazyOnload" id="googleAnalytics2">
+          {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-ZQG9EXSZ30', {
+              page_path: window.location.pathname,
+              });
+          `}
+        </Script>
         <Component {...pageProps} />
       </div>
     );
@@ -15,7 +30,32 @@ function MyApp({ Component, pageProps, router }: AppProps) {
   if ([`/ebook`, `/ebook_thank_you`].includes(router.pathname)) {
     return (
       <div>
-        <Component {...pageProps} />
+        <Script
+          strategy="lazyOnload"
+          src={`https://www.googletagmanager.com/gtag/js?id=G-ZQG9EXSZ30`}
+          id="googleAnalytics1"
+        />
+        <Script strategy="lazyOnload" id="googleAnalytics2">
+          {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-ZQG9EXSZ30', {
+              page_path: window.location.pathname,
+              });
+          `}
+        </Script>
+        <GoogleReCaptchaProvider
+          reCaptchaKey="6LffzxUiAAAAAAnhLy-OrukIg8ZC-Ya3oho1hdf7"
+          scriptProps={{
+            async: false,
+            defer: false,
+            appendTo: "head",
+            nonce: undefined,
+          }}
+        >
+          <Component {...pageProps} />
+        </GoogleReCaptchaProvider>
       </div>
     );
   }
