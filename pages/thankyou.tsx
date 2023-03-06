@@ -21,7 +21,7 @@ const ThankYou: NextPage = () => {
             Thank You!
           </h1>
           <p className="text-lg uppercase tracking-wider text-gray-300  mb-2">
-            A confirmation email has been sent to you inbox. In the meantime,
+            A confirmation email has been sent to your inbox. In the meantime,
             watch this video:
           </p>
         </div>
