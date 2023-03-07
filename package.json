@@ -11,6 +11,7 @@
   "dependencies": {
     "daisyui": "^2.19.0",
     "framer-motion": "^9.0.0",
+    "netlify-plugin-cloudinary": "^1.2.0",
     "next": "12.3.0",
     "node-mailjet": "^5.1.1",
     "nuka-carousel": "^5.4.0",

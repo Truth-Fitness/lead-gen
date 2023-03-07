@@ -1,0 +1,11 @@
+[[plugins]]
+package = "@netlify/plugin-nextjs"
+
+package = "netlify-plugin-cloudinary"
+  [plugins.inputs]
+  cloudName = "dafkp3wyr"
+  deliveryType = "upload"
+
+[build]
+command = "yarn next build"
+publish = ".next"
