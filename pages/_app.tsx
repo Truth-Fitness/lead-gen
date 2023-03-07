@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useEffect } from "react";
 import Script from "next/script";
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
+import Head from "next/head";
 function MyApp({ Component, pageProps, router }: AppProps) {
   if ([`/news`].includes(router.pathname)) {
     return (
@@ -66,6 +67,22 @@ function MyApp({ Component, pageProps, router }: AppProps) {
             nonce: undefined,
           }}
         >
+          <Head>
+            <meta property="og:title" content="Truth Fitness Free E-Book" />
+            <meta
+              property="og:image"
+              content="https://truthfitness.co.uk/ebook_cover.png"
+            />
+            <meta
+              property="og:description"
+              content="Free E-Book - How to become a healthy business leader in 5 simple steps"
+            />
+            <meta
+              property="og:url"
+              content="https://truthfitness.co.uk/ebook"
+            />
+          </Head>
+
           <Component {...pageProps} />
         </GoogleReCaptchaProvider>
       </div>
