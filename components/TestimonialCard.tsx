@@ -1,6 +1,7 @@
 import { Testimonial } from "../types/testimonial";
 import Image from "next/image";
 import { useState } from "react";
+import { CldImage } from "next-cloudinary";
 
 type Props = {
   testimonial: Testimonial;
@@ -17,8 +18,8 @@ export const TestimonialCard = ({ testimonial }: Props) => {
           rel="noreferrer"
           className="absolute top-4 left-4"
         >
-          <Image
-            src="/LinkedIn_icon.svg"
+          <CldImage
+            src="truth-lead-gen/LinkedIn_icon-4da9594d777ead0de676fbb74cac80cf"
             alt="linkedin"
             width="20px"
             height="20px"
@@ -26,7 +27,7 @@ export const TestimonialCard = ({ testimonial }: Props) => {
         </a>
       )}
       <div className="flex justify-center">
-        <Image
+        <CldImage
           src={testimonial.image}
           alt={testimonial.name}
           objectFit="cover"

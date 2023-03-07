@@ -6,6 +6,7 @@ import mainHero from "../public/ebook_cover.png";
 import testimonials from "../data/testimonials.json";
 import { useState } from "react";
 import EbookPopup from "../components/EbookPopup";
+import { CldImage } from "next-cloudinary";
 
 const Ebook: NextPage = () => {
   const [popup, setPopup] = useState(false);
@@ -22,7 +23,13 @@ const Ebook: NextPage = () => {
         <div className="flex flex-wrap items-center gap-4 justify-between">
           <div className="md:w-6/12 w-full">
             <div className="md:mx-3 mx-5 shadow-lg md:shadow-2xl">
-              <Image src={mainHero} alt="Picture of the author" />
+              <CldImage
+                src="truth-lead-gen/ebook_cover_dkyz3v"
+                alt="Ebook"
+                height={"840px"}
+                width={"600px"}
+                objectFit="cover"
+              />
             </div>
           </div>
           <div className="md:w-5/12 w-full mx-4">
