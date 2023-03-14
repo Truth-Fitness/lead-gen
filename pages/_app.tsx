@@ -25,6 +25,18 @@ function MyApp({ Component, pageProps, router }: AppProps) {
               });
           `}
         </Script>
+        <Head>
+          <meta property="og:title" content="Truth Fitness News Letter" />
+          <meta
+            property="og:image"
+            content="https://truthfitness.co.uk/news-og-image.jpeg"
+          />
+          <meta
+            property="og:description"
+            content="The Healthy Business Leader Newsletter"
+          />
+          <meta property="og:url" content="https://truthfitness.co.uk/news" />
+        </Head>
         <Component {...pageProps} />
       </div>
     );
