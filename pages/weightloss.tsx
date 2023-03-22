@@ -55,6 +55,7 @@ const Weightloss: NextPage = () => {
         />
         <meta property="og:url" content="https://truthfitness.co.uk/" />
         <meta property="og:site_name" content="TRUTH Fitness" />
+        <meta property="og:image" content="weightloss-og-image.jpg" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
