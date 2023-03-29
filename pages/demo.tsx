@@ -2,19 +2,10 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import { MdCheck } from "react-icons/md";
-import Excercise from "../components/Excercise";
-import Call from "../components/Call";
 import dynamic from "next/dynamic";
-import React, { useEffect, useRef, useState } from "react";
-import { useFormFields, useMailChimpForm } from "use-mailchimp-form";
-import { useCookies } from "react-cookie";
-import BookNow from "../components/BookNow";
-import Carousel from "nuka-carousel";
-import { useIntersection } from "../hooks/useIntersection";
-import Popup from "../components/Popup";
-import Router from "next/router";
+import React from "react";
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
-import mainHero from "../public/bw-cameron-tony.jpeg";
+import mainHero from "../public/ebook_cover.png";
 import EmailForm from "../components/EmailForm";
 import { TextContainer } from "../components/TextContainer";
 import { Blob } from "../components/Blob";
@@ -22,6 +13,7 @@ import Presentation from "../components/Presentation";
 import Feature from "../components/Feature";
 import features from "../public/features.json";
 import ResultsComparison from "../components/ResultsComparison";
+import { CldImage } from "next-cloudinary";
 const Home: NextPage = () => {
   return (
     <div>
@@ -48,27 +40,24 @@ const Home: NextPage = () => {
 
       <main className="bg-slate-50">
         <div className="bg-gray-900 relative w-screen">
-          <div className="flex items-center flex-wrap-reverse px-5 pt-10 pb-24 max-w-[1600px] m-auto">
+          <div className="flex items-center flex-wrap-reverse px-5 pt-10 pb-24 max-w-[1600px] m-auto gap-4 justify-around">
             <div className="lg:w-6/12 w-full">
               <h1 className="text-4xl md:text-5xl font-bold  text-white my-4 md:mb-2">
-                Unleashing the <span className="text-red">Top Five</span>{" "}
-                Surprising Techniques for Rapid Weight Loss
+                Unleashing the <span className="text-red">Top Five</span> Steps
+                to Becoming a Healthy Business Leader
               </h1>
               <p className="text-lg uppercase tracking-wider text-gray-300  mb-2">
                 Discover how to:
               </p>
               <ol className="ml-8 list-decimal text-xl font-semibold  text-[#00c6c6]">
-                <li>Transform Habits for Optimal Health</li>
-                <li>Create Efficient Fat-Burning Workouts</li>
-                <li>Strengthen Immunity and Vitality</li>
-                <li>Fit workouts into an insane diary</li>
-                <li>Achieve rapid results and maintain them forever</li>
+                <li>
+                  How to become a healthy business leader in five simple steps
+                </li>
+                <li>How to lose weight + boost immunity</li>
+                <li>How to improve sleep and skyrocket your energy</li>
               </ol>
-              <p className="mt-6 max-w-2xl text-gray-200">
-                Unlock the Key to a Healthier, Confident Life: The Six-Week
-                Business Leader Transformation Training. Join the 400+ Business
-                Leaders Who Have Transformed Their Lives with Our Proven
-                Strategies.
+              <p className="mt-6 max-w-2xl text-gray-200 uppercase font-impact text-2xl ">
+                Download your free ebook now
               </p>
               <div className="w-full my-6">
                 <EmailForm />
@@ -88,9 +77,15 @@ const Home: NextPage = () => {
                 </li>
               </ul>
             </div>
-            <div className="lg:w-6/12 w-full grayscale">
-              <div className="md:mx-3">
-                <Image src={mainHero} alt="Picture of the author" />
+            <div className="lg:w-5/12 w-full ">
+              <div className="md:mx-3 shadow">
+                <CldImage
+                  src="truth-lead-gen/ebook_cover_dkyz3v"
+                  alt="Ebook"
+                  height={"840px"}
+                  width={"600px"}
+                  objectFit="cover"
+                />
               </div>
             </div>
           </div>
@@ -124,25 +119,23 @@ const Home: NextPage = () => {
               FED UP WITH FEELING THIS WAY?
             </p>
             <h2 className="text-3xl text-turq font-bold mb-7">
-              {`You have committed your life to the pursuit of business success. As long as you can remember, the business has been your main focus; 
-              you are as driven as they come.`}
+              {`You're fully dedicated to achieving business success and have been relentlessly focused on it for as long as you can remember.`}
             </h2>
             <TextContainer>
-              You are always busy running from meeting to meeting. The business
-              has consumed your energy, time and focus for as long as you can
-              remember. As a result, you sleep badly, travel too much and use
-              alcohol and food to relax when you finally get a moment to rest.
+              Your busy schedule, consumed by business, leaves you with little
+              time to rest. You struggle with poor sleep, excessive travel, and
+              rely on alcohol and food to unwind.
             </TextContainer>
             <TextContainer>
-              When you finally get home to see your family, you are exhausted
-              and feel bad because you are never really there 100%. You just
-              want to sit on the sofa and chill or catch up on emails.
+              You feel guilty when spending time with your family because
+              exhaustion leaves you unable to be fully present, often opting to
+              relax on the couch or catch up on emails instead.
             </TextContainer>
             <TextContainer>
-              {`You have put on weight. You aren't sure how much because you’re
-              too scared to check the scales. But you are acutely aware that
-              your favourite suit and trousers don't fit and your belly gets
-              bigger every time you look in the mirror.`}
+              {`You've gained weight, which is evident by how your favourite
+              clothes no longer fit, and your belly seems to expand each time
+              you see yourself in the mirror. You're too scared to check the
+              scale to know the exact amount.`}
             </TextContainer>
             <TextContainer>
               Your body constantly feels inflamed, and your back always aches.
@@ -191,9 +184,18 @@ const Home: NextPage = () => {
               weeks. Join us now and experience the TRUTH Fitness®️ difference
             </p>
             <div className="grid grid-cols-2 md:grid-cols-3  gap-4 ">
-              {features.map((feature) => (
-                <Feature key={feature.id} {...feature} />
+              {features.map((feature, index) => (
+                <Feature key={feature.id} {...feature} index={index + 1} />
               ))}
+            </div>
+            <div className="flex justify-center">
+              <Image
+                src="/cameron-weights.jpg"
+                alt="Picture of the author"
+                width={600}
+                height={500}
+                objectFit="contain"
+              />
             </div>
           </div>
         </div>
