@@ -82,8 +82,8 @@ const Home: NextPage = () => {
                 <CldImage
                   src="truth-lead-gen/ebook_cover_dkyz3v"
                   alt="Ebook"
-                  height={"840px"}
-                  width={"600px"}
+                  height={"600px"}
+                  width={"425px"}
                   objectFit="cover"
                 />
               </div>
@@ -187,15 +187,6 @@ const Home: NextPage = () => {
               {features.map((feature, index) => (
                 <Feature key={feature.id} {...feature} index={index + 1} />
               ))}
-            </div>
-            <div className="flex justify-center">
-              <Image
-                src="/cameron-weights.jpg"
-                alt="Picture of the author"
-                width={600}
-                height={500}
-                objectFit="contain"
-              />
             </div>
           </div>
         </div>

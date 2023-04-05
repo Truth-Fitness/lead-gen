@@ -9,26 +9,26 @@ const ResultsComparison: React.FunctionComponent = () => {
   const [selectResult, setSelectResult] = useState<Result>(results[0]);
   return (
     <div className="flex justify-center mt-10">
-      <div className="flex grow p-2 flex-wrap-reverse justify-center max-w-4xl items-center">
-        <div className="w-full md:w-6/12 p-2">
+      <div className="flex grow p-2 flex-wrap-reverse justify-center max-w-7xl items-center">
+        <div className="w-full md:w-7/12 p-2 md:text-lg cursor-pointer">
           {results.map((result) => (
             <div
               className={`${
                 selectResult.id === result.id
                   ? "bg-navy-light text-turq md:-mr-6 md:pr-6"
                   : "bg-navy text-turq "
-              } mb-4 p-4 rounded flex items-center justify-between shadow-lg gap-4 hover:bg-navy-light hover:text-white`}
+              } mb-4 md:p-8 p-4 rounded flex items-center  shadow-lg gap-4 hover:bg-navy-light hover:text-white`}
               key={result.id}
               onClick={() => setSelectResult(result)}
             >
-              <div>
-                <h4 className="text-lg font-bold">{result.name}</h4>
+              <div className="w-20">
+                <h4 className="md:text-xl text-lg font-bold">{result.name}</h4>
               </div>
               <p className="text-white ml-2">{result.description}</p>
             </div>
           ))}
         </div>
-        <div className="w-full md:w-6/12 p-2 flex justify-center">
+        <div className="w-full md:w-5/12 p-2 flex justify-center">
           <div className="w-[300px]">
             <motion.div
               key={selectResult ? selectResult.id : "empty"}
@@ -43,8 +43,8 @@ const ResultsComparison: React.FunctionComponent = () => {
                     <Image
                       alt="before"
                       src={"/results/" + selectResult.before}
-                      width="300px"
-                      height="400px"
+                      width="400px"
+                      height="700px"
                       objectFit="contain"
                     />
                   </div>
@@ -53,8 +53,8 @@ const ResultsComparison: React.FunctionComponent = () => {
                   <Image
                     alt="after"
                     src={"/results/" + selectResult.after}
-                    width="300px"
-                    height="400px"
+                    width="400px"
+                    height="700px"
                     objectFit="contain"
                   />
                 }
