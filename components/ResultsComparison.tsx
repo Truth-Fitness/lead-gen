@@ -21,8 +21,9 @@ const ResultsComparison: React.FunctionComponent = () => {
               key={result.id}
               onClick={() => setSelectResult(result)}
             >
-              <div className="w-20">
+              <div className="w-20 md:w-32 shrink-0">
                 <h4 className="md:text-xl text-lg font-bold">{result.name}</h4>
+                <p className="text-sm">{result.title}</p>
               </div>
               <p className="text-white ml-2">{result.description}</p>
             </div>

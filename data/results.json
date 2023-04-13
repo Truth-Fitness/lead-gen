@@ -2,22 +2,38 @@
   {
     "id": 1,
     "name": "Geoff",
-    "description": "Lost 7 Kilos and dropped two shirt sizes in 6 weeks",
+    "description": "Lost 7 Kilos",
     "before": "geoff-before.jpg",
     "after": "geoff-after.jpg"
   },
   {
     "id": 2,
     "name": "Angus",
-    "description": "Dropped 6% body fat and three belt notches in just 6 weeks",
+    "description": "Dropped 6% body fat and three belt notches",
     "before": "angus-before.jpg",
     "after": "angus-after.jpg"
   },
   {
     "id": 3,
     "name": "Mark",
-    "description": "Lost 11 Kilos in 6 weeks and went on to lose 22 Kilos total in 12 weeks",
+    "description": "Lost 11 Kilos and went on to lose 22 Kilos",
     "before": "mark-before.jpg",
     "after": "mark-after.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Chris",
+    "title": "CEO",
+    "description": "Lost 20.6kg",
+    "before": "chris-before.jpg",
+    "after": "chris-after.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Stephen",
+    "title": "C Suite Executive",
+    "description": "Lost 9kg and 10cm off of belly",
+    "before": "stephen-before.jpg",
+    "after": "stephen-after.jpg"
   }
 ]

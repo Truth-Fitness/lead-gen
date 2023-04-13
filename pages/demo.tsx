@@ -14,6 +14,7 @@ import Feature from "../components/Feature";
 import features from "../public/features.json";
 import ResultsComparison from "../components/ResultsComparison";
 import { CldImage } from "next-cloudinary";
+import { CalendlyLink } from "../components/CalendlyLink";
 const Home: NextPage = () => {
   return (
     <div>
@@ -142,6 +143,9 @@ const Home: NextPage = () => {
               You are tired of feeling tired but don’t know where to turn for
               support that works!?
             </TextContainer>
+            <div className="flex justify-center">
+              <CalendlyLink />
+            </div>
           </div>
           <div className="relative mb-10">
             <Blob className="w-[350px] md:w-[600px]" />
@@ -188,6 +192,9 @@ const Home: NextPage = () => {
                 <Feature key={feature.id} {...feature} index={index + 1} />
               ))}
             </div>
+            <div className="flex justify-center mt-8">
+              <CalendlyLink />
+            </div>
           </div>
         </div>
         <div className="relative bg-gradient-to-t from-black to-navy mt-10">
@@ -212,10 +219,10 @@ const Home: NextPage = () => {
                 </span>{" "}
                 for Business Owners and Senior Executives
               </h2>
-              <div className="flex  flex-wrap mt-10">
+              <div className="flex flex-wrap mt-10">
                 <div className=" pt-[48.25%] md:pt-[25.25%] mx-8 relative w-full md:w-5/12 lg:pt-[22.5%]">
                   <ReactPlayer
-                    url="https://youtu.be/1UJ9gKSzanQ"
+                    url="https://www.youtube.com/watch?v=-TiugingDko"
                     width="100%"
                     height="100%"
                     className="absolute top-0 left-0"
@@ -251,7 +258,11 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
-          <div className="py-10">
+          <div className=" mt-5 md:mt-16 max-w-[1300px] m-auto flex justify-center">
+            <CalendlyLink />
+          </div>
+
+          <div className="py-5 md:py-10">
             <ResultsComparison />
           </div>
         </div>
