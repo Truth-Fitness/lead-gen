@@ -84,7 +84,8 @@ function MyApp({ Component, pageProps, router }: AppProps) {
             <meta property="og:title" content="Truth Fitness Free E-Book" />
             <meta
               property="og:image"
-              content="https://truthfitness.co.uk/og-ebook-image.jpeg"
+              content="https://truthfitness.co.uk/og-ebook-image.png
+              "
             />
             <meta
               property="og:description"

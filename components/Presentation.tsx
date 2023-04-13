@@ -11,12 +11,12 @@ const Presentation: React.FunctionComponent = () => {
     <div className="flex flex-wrap-reverse justify-between items-center">
       <div className="mt-10 md:mt-0 md:w-[45%]">
         <Image
-          src={"/" + step.image}
-          width="500px"
-          height="400px"
+          src="/cameron-weights.jpg"
           alt="Picture of the author"
+          width={600}
+          height={400}
           objectFit="cover"
-          style={{ borderRadius: "1rem" }}
+          className="shadow-lg rounded-lg "
         />
       </div>
       <div className="md:w-6/12">
