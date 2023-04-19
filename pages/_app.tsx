@@ -6,6 +6,7 @@ import Script from "next/script";
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 import Head from "next/head";
 import { CldImage } from "next-cloudinary";
+import Logo from "../components/Logo";
 function MyApp({ Component, pageProps, router }: AppProps) {
   if ([`/news`].includes(router.pathname)) {
     return (
@@ -119,17 +120,9 @@ function MyApp({ Component, pageProps, router }: AppProps) {
               });
           `}
       </Script>
-      <nav className="navbar navbar-expand-lg shadow-lg py-2 bg-gray-800 relative flex items-center w-full justify-between">
+      <nav className="navbar navbar-expand-lg shadow-lg py-3 bg-gray-800 relative flex items-center w-full justify-between">
         <div className="px-6 w-full flex flex-wrap items-center justify-between">
-          <div className="flex items-center">
-            <CldImage
-              src="truth-lead-gen/logo-white_excj5e"
-              alt="logo"
-              width={120}
-              height={45}
-              objectFit="contain"
-            />
-          </div>
+          <Logo />
         </div>
       </nav>
       <GoogleReCaptchaProvider
