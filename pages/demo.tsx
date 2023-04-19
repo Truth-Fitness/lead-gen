@@ -15,6 +15,7 @@ import features from "../public/features.json";
 import ResultsComparison from "../components/ResultsComparison";
 import { CldImage } from "next-cloudinary";
 import { CalendlyLink } from "../components/CalendlyLink";
+import FAQ from "../components/FAQ";
 const Home: NextPage = () => {
   return (
     <div>
@@ -219,17 +220,27 @@ const Home: NextPage = () => {
                 </span>{" "}
                 for Business Owners and Senior Executives
               </h2>
-              <div className="flex flex-wrap mt-10">
-                <div className=" pt-[48.25%] md:pt-[25.25%] mx-8 relative w-full md:w-5/12 lg:pt-[22.5%]">
-                  <ReactPlayer
-                    url="https://www.youtube.com/watch?v=-TiugingDko"
+              <div className="flex md:flex-nowrap flex-wrap mt-10 justify-between mx-4 gap-4">
+                {/* <ReactPlayer
+                    url=""
                     width="100%"
                     height="100%"
                     className="absolute top-0 left-0"
                     playing={true}
-                  />
+                  /> */}
+                <div className="w-full flex items-center">
+                  <div className="video-container">
+                    <iframe
+                      src="https://www.youtube.com/embed/-TiugingDko"
+                      frameBorder="0"
+                      allow="autoplay; encrypted-media"
+                      allowFullScreen
+                      title="video"
+                    />
+                  </div>
                 </div>
-                <div className="p-8 w-full md:w-6/12 lg:mt-10 mt-10">
+
+                <div className="p-8 w-full md:w-6/12 lg:mt-10 mt-10 shrink-0">
                   <blockquote className="text-white ">
                     {`As a Founder and CEO of 2 companies, when I first reached
                     out to Cameron and his team at TRUTH, I was dubious about
@@ -264,6 +275,32 @@ const Home: NextPage = () => {
 
           <div className="py-5 md:py-10">
             <ResultsComparison />
+            <div className=" mt-5 md:mt-8 max-w-[1300px] m-auto flex justify-center">
+              <CalendlyLink />
+            </div>
+          </div>
+        </div>
+        <div className="max-w-[1300px] m-auto py-8">
+          <h2 className="text-4xl font-bold text-navy text-center my-4">
+            Frequently Asked Questions
+          </h2>
+          <div className="flex flex-col gap-5 my-8 px-4">
+            <FAQ
+              question="Q1. I am out of shape and I haven't exercised for years, am I going to be able to do the programme?"
+              answer="We specialise in 40 plus business leaders and have years of experience in working with people that have let their health and fitness diminish. Everything we do is bespoke from your workouts, to nutrition and accountability so that it is challenging but a manageable."
+            />
+            <FAQ
+              question="Q2. I am always traveling with work, can I get results with your system?"
+              answer="The Rapid Result System has been built to be extremely flexible. It is delivered online through our app, video calls and our chat system so as long as you have Wi-Fi the programme follows you. Also, no matter where you are staying or working out, we will guide you."
+            />
+            <FAQ
+              question="Q3. I have tried lots of programmes before but nothing has worked, how do I know this will?"
+              answer="We have worked and got results with over 400 of the UK's business elite. We are so confident in our system that we attach a results guarantee to all of our programmes."
+            />
+            <FAQ
+              question="Q4. Is your programme 121?"
+              answer="We have a range of programmes that fit every need. We have our Prestige 121 programme and our small group programme. Cam will advise you on the best version for you and your needs."
+            />
           </div>
         </div>
       </main>

@@ -27,7 +27,7 @@
     "id": 4,
     "name": "Chris",
     "title": "Business Owner",
-    "description": "Lost 20.6kg",
+    "description": "Lost 20.6 Kilos",
     "before": "chris-before.jpg",
     "after": "chris-after.jpg"
   },
@@ -35,7 +35,7 @@
     "id": 5,
     "name": "Stephen",
     "title": "C Suite Executive",
-    "description": "Lost 9kg and 10cm off of belly",
+    "description": "Lost 9 Kilos and 10cm off of belly",
     "before": "stephen-before.jpg",
     "after": "stephen-after.jpg"
   }
