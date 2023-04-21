@@ -107,7 +107,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
     <div>
       <Script
         strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=G-ZQG9EXSZ30`}
+        src={`https://www.googletagmanager.com/gtag/js?id=G-71H30PPXJW`}
         id="googleAnalytics1"
       />
       <Script strategy="lazyOnload" id="googleAnalytics2">
@@ -115,10 +115,21 @@ function MyApp({ Component, pageProps, router }: AppProps) {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-ZQG9EXSZ30', {
+              gtag('config', 'G-71H30PPXJW', {
               page_path: window.location.pathname,
               });
           `}
+      </Script>
+      <Script id="hotjar-main">
+        {`(function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3461457,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    `}
       </Script>
       <nav className="navbar navbar-expand-lg shadow-lg py-3 bg-gray-800 relative flex items-center w-full justify-between">
         <div className="px-6 w-full flex flex-wrap items-center justify-between">
