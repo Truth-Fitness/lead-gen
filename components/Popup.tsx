@@ -1,4 +1,3 @@
-import Router from "next/router";
 import { useEffect } from "react";
 import { useCookies } from "react-cookie";
 import { MdClose } from "react-icons/md";
@@ -11,7 +10,7 @@ export default function Popup({
   setPopup: (value: boolean) => void;
   popup: boolean;
 }) {
-  const [cookies, setCookie] = useCookies(["enrolled"]);
+  const [, setCookie] = useCookies(["enrolled"]);
   const { loading, error, success, message, handleSubmit } = useMailChimpForm(
     "https://truthfitness.us17.list-manage.com/subscribe/post?u=d195bca7b15b09591a2869256&amp;id=12ff7a1116&amp;f_id=005150e0f0"
   );

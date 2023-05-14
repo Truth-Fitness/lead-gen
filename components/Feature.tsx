@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 type Props = {
   index: number;
   title: string;

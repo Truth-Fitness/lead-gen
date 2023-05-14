@@ -1,8 +1,6 @@
 import { NextPage } from "next";
-import Image from "next/image";
-import { MdCheck, MdCheckCircle } from "react-icons/md";
+import { MdCheckCircle } from "react-icons/md";
 import { TestimonialCard } from "../components/TestimonialCard";
-import mainHero from "../public/ebook_cover.png";
 import testimonials from "../data/testimonials.json";
 import { useState } from "react";
 import EbookPopup from "../components/EbookPopup";

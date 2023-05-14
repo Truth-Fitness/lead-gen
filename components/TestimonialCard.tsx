@@ -1,5 +1,4 @@
 import { Testimonial } from "../types/testimonial";
-import Image from "next/image";
 import { useState } from "react";
 import { CldImage } from "next-cloudinary";
 

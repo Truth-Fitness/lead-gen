@@ -2,7 +2,6 @@ import { useState } from "react";
 import presentation from "../public/presentation.json";
 import { PresentationStep } from "../types/presentation";
 import { motion } from "framer-motion";
-import mainHero from "../public/cameron.jpg";
 import Image from "next/image";
 
 const Presentation: React.FunctionComponent = () => {

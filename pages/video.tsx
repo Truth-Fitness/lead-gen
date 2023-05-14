@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import { MdCheck } from "react-icons/md";
 import Excercise from "../components/Excercise";
 import Call from "../components/Call";
@@ -8,13 +7,12 @@ import dynamic from "next/dynamic";
 import { useEffect, useRef } from "react";
 import { useCookies } from "react-cookie";
 import BookNow from "../components/BookNow";
-import Carousel from "nuka-carousel";
 import Router from "next/router";
 const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 const Home: NextPage = () => {
   const ref = useRef(null);
-  const [cookies, setCookie] = useCookies(["enrolled"]);
+  const [cookies] = useCookies(["enrolled"]);
   useEffect(() => {
     const use = async () => {
       (await import("tw-elements")).default;
@@ -27,8 +25,6 @@ const Home: NextPage = () => {
       Router.push("/");
     }
   }, [cookies]);
-
-  const testimonials = [1, 2, 3, 4, 5, 6, 7];
 
   return (
     <div>

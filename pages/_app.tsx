@@ -1,11 +1,8 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import Image from "next/image";
-import { useEffect } from "react";
 import Script from "next/script";
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 import Head from "next/head";
-import { CldImage } from "next-cloudinary";
 import Logo from "../components/Logo";
 function MyApp({ Component, pageProps, router }: AppProps) {
   if ([`/news`].includes(router.pathname)) {

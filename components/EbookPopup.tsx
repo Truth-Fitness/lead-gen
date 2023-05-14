@@ -11,7 +11,7 @@ export default function EbookPopup({
   setPopup: (value: boolean) => void;
   popup: boolean;
 }) {
-  const [cookies, setCookie] = useCookies(["signedUpEbook"]);
+  const [, setCookie] = useCookies(["signedUpEbook"]);
   const { loading, error, success, message, handleSubmit } = useMailChimpForm(
     "https://truthfitness.us17.list-manage.com/subscribe/post?u=d195bca7b15b09591a2869256&amp;id=12ff7a1116&amp;f_id=005150e0f0"
   );
