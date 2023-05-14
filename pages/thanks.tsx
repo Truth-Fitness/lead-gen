@@ -57,7 +57,7 @@ const ThanksPage: NextPage = () => {
       <div className="mx-4 my-6">
         <div className="video-container">
           <iframe
-            src="https://www.youtube.com/embed/-TiugingDko"
+            src="https://www.youtube.com/embed/6yueMjK30Qg"
             allow="autoplay; encrypted-media"
             allowFullScreen
             title="video"
