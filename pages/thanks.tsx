@@ -7,6 +7,9 @@ import {
   MdTakeoutDining,
 } from "react-icons/md";
 import MdNutrition from "../components/NutritionIcon";
+import BuyNowButton from "../components/BuyNowButton";
+import { TestimonialCard } from "../components/TestimonialCard";
+import testimonials from "../data/testimonials.json";
 
 type Item = {
   icon: React.ReactNode;
@@ -50,7 +53,7 @@ const ThanksPage: NextPage = () => {
     use();
   }, []);
   return (
-    <div className="max-w-[1100px] m-auto">
+    <div className="max-w-[1440px] m-auto">
       <div className="mx-4 my-6">
         <div className="video-container">
           <iframe
@@ -69,71 +72,99 @@ const ThanksPage: NextPage = () => {
             </span>
           </h1>
           <div className="mt-6">
-            <p className="my-2 text-lg font-medium">
-              {`Congratulations on taking the first step towards becoming a
+            <div className="max-w-5xl m-auto text-center">
+              <p className="my-2 text-lg font-medium">
+                {`Congratulations on taking the first step towards becoming a
                 healthier business leader with our free ebook "How to Become a
                 Healthy Business Leader in Five Simple Steps." We hope you've
                 found it informative and useful on your health journey.`}
-            </p>
-            <p className="my-2 text-lg font-medium">
-              {`Now, we want to take things to the next level and offer you the
+              </p>
+              <p className="my-2 text-lg font-medium">
+                {`Now, we want to take things to the next level and offer you the
                 opportunity to access our Healthy Business Leader Success
                 Bundle. This one-time offer is exclusively available to you as a
                 thank-you for downloading our ebook.`}
-            </p>
+              </p>
 
-            <p className="my-2 text-lg font-medium">
-              {`The Healthy Business Leader Success Bundle includes everything
+              <p className="my-2 text-lg font-semibold mt-6">
+                {`The Healthy Business Leader Success Bundle includes everything
                 you need to achieve your health and business goals, including:`}
-            </p>
-            <div className="flex flex-wrap justify-center">
+              </p>
+            </div>
+            <div className="flex flex-wrap justify-center gap-6 mt-8">
               {items.map((item, index) => (
                 <div
                   key={index}
-                  className={`w-full md:w-1/2 flex ${
-                    index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                  } justify-center items-center p-4 gap-8`}
+                  className={`w-full flex ${
+                    index % 2 === 0
+                      ? "md:flex-row mr-auto"
+                      : "md:flex-row-reverse ml-auto"
+                  }  items-center p-6 gap-6  max-w-[900px] `}
                 >
                   <div
-                    className={`w-16 h-16 md:w-20 md:h-20 rounded-full bg-turq flex items-center justify-center text-white text-3xl md:text-4xl font-bold shrink-0`}
+                    className={`w-16 h-16 md:w-24 md:h-24 rounded-full bg-turq flex items-center justify-center text-white text-3xl md:text-4xl font-bold shrink-0`}
                   >
                     {item.icon}
                   </div>
-                  <div className="text-navy md:text-lg">
+                  <div className="text-navy text-lg md:text-xl">
                     <span className="font-bold">{item.title}</span> -{" "}
                     {item.text}
                   </div>
                 </div>
               ))}
             </div>
-            <p className="my-6 text-lg font-medium">
-              {`These resources are specifically designed to help busy business
+            <div className="max-w-4xl m-auto">
+              <p className="my-6 text-lg font-medium">
+                {`These resources are specifically designed to help busy business
               leaders like you make healthy choices, regardless of your hectic
               schedule. With our comprehensive guides and video training, you'll
               have all the tools you need to take control of your health and
               succeed in business.`}
-            </p>
-            <p className="my-4 text-lg font-medium">
-              {`Now, we know you're probably wondering about the cost. If you were
+              </p>
+              <p className="my-4 text-lg font-medium">
+                {`Now, we know you're probably wondering about the cost. If you were
               to purchase each of these resources separately, it would cost you
               over £150. But for a limited time, we're offering you the
               opportunity to grab the entire Healthy Business Leader Success
               Bundle for just `}
-              <span className="font-bold"> {`£17!`}</span>
-            </p>
+                <span className="font-bold"> {`£17!`}</span>
+              </p>
+              <div className="flex justify-center my-8">
+                <BuyNowButton />
+              </div>
+              <p className="my-6 text-lg font-medium">
+                {`That's right - for less than the cost of a meal out, you can have
+              access to all the tools and resources you need to achieve optimal
+              health and business success. And if you're not completely
+              satisfied with your purchase, we offer a`}
+                <span className="font-bold">
+                  {" "}
+                  {`30-day money-back
+              guarantee`}
+                </span>
+                {`. So you can try the Healthy Business Leader Success
+              Bundle risk-free.`}
+              </p>
+              <p className="my-6 text-lg font-medium">
+                {`Don't miss out on this exclusive opportunity to take your health
+              and business to the next level. Click the button above to add the
+              Healthy Business Leader Success Bundle to your order now!`}
+              </p>
+            </div>
           </div>
         </div>
 
-        {/* <div className="mb-6">
-          <h2 className="text-3xl text-center font-bold">
-            What people say about TRUTH…
-          </h2>
+        <div className="mb-6">
+          <h2 className="text-3xl text-center font-bold">Testimonials</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 content-center mt-8 mx-4 ">
             {testimonials.map((testimonial) => (
               <TestimonialCard testimonial={testimonial} key={testimonial.id} />
             ))}
           </div>
-        </div> */}
+        </div>
+        <div className="flex justify-center my-10">
+          <BuyNowButton />
+        </div>
       </div>
     </div>
   );
