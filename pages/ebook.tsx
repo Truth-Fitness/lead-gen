@@ -61,7 +61,7 @@ const Ebook: NextPage = () => {
       </div>
       <div className="w-full bg-black py-5 md:py-10 mt-10 relative">
         <div className="m-auto max-w-[1100px]">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 content-center mt-8 mx-4 ">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 content-center mt-8 mx-4 ">
             {testimonials.map((testimonial) => (
               <TestimonialCard testimonial={testimonial} key={testimonial.id} />
             ))}

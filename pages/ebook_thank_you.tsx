@@ -62,7 +62,7 @@ const EbookThankYou: NextPage = () => {
           <h2 className="text-3xl text-center font-bold">
             What people say about TRUTH…
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 content-center mt-8 mx-4 ">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 content-center mt-8 mx-4 ">
             {testimonials.map((testimonial) => (
               <TestimonialCard testimonial={testimonial} key={testimonial.id} />
             ))}

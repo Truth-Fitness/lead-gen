@@ -158,8 +158,35 @@ const ThanksPage: NextPage = () => {
 
         <div className="mb-6">
           <h2 className="text-3xl text-center font-bold">Testimonials</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 content-center mt-8 mx-4 ">
-            {testimonials.map((testimonial) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8  mt-8 mx-4 ">
+            {testimonials.slice(0, 3).map((testimonial) => (
+              <TestimonialCard testimonial={testimonial} key={testimonial.id} />
+            ))}
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8 mx-4 ">
+            <div className="p-4 rounded shadow ring-1 ring-black ring-opacity-5">
+              <div className="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/-TiugingDko"
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen
+                  title="video"
+                />
+              </div>
+            </div>
+            <div className="p-4 rounded shadow ring-1 ring-black ring-opacity-5">
+              <div className="video-container">
+                <iframe
+                  src="https://www.youtube.com/embed/zJo5OYvfNro"
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen
+                  title="video"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8  mt-8 mx-4 ">
+            {testimonials.slice(3).map((testimonial) => (
               <TestimonialCard testimonial={testimonial} key={testimonial.id} />
             ))}
           </div>

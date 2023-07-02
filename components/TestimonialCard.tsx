@@ -9,7 +9,7 @@ type Props = {
 export const TestimonialCard = ({ testimonial }: Props) => {
   const [expand, setExpand] = useState(false);
   return (
-    <div className="rounded shadow-lg ring-1 ring-black ring-opacity-5 p-4 pb-8 bg-white max-w-sm m-auto relative min-h-[500px]">
+    <div className="rounded shadow-lg ring-1 ring-black ring-opacity-5 p-4 pb-8 bg-white m-auto relative min-h-[500px]">
       {testimonial.linkedIn && (
         <a
           href={testimonial.linkedIn}
