@@ -33,7 +33,7 @@ const Book: NextPage = () => {
       </div>
       <div className="grow">
         <InlineWidget
-          url="https://calendly.com/truth-fit/initialcall"
+          url="https://calendly.com/truth-fit/call"
           styles={{
             height: "1400px",
           }}

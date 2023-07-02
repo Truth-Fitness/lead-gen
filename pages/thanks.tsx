@@ -54,23 +54,25 @@ const ThanksPage: NextPage = () => {
   }, []);
   return (
     <div className="max-w-[1440px] m-auto">
-      <div className="mx-4 my-6">
-        <div className="video-container">
-          <iframe
-            src="https://www.youtube.com/embed/6yueMjK30Qg"
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-            title="video"
-          />
+      <div className="mx-4 my-6 mt-8">
+        <h1 className="text-xl md:text-3xl text-center font-bold text-navy uppercase">
+          Introducing the Healthy Business Leader Success Bundle{" "}
+          <span className="text-navy block text-3xl md:text-5xl normal-case font-bold mt-4 ">
+            Your Key to Achieving Optimal Health and Business Success!
+          </span>
+        </h1>
+        <div className="max-w-4xl m-auto py-8">
+          <div className="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/6yueMjK30Qg"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+              title="video"
+            />
+          </div>
         </div>
 
         <div className="my-8">
-          <h1 className="text-xl md:text-2xl text-center font-bold text-navy uppercase">
-            Introducing the Healthy Business Leader Success Bundle{" "}
-            <span className="text-turq block text-3xl md:text-4xl normal-case font-bold mt-1">
-              Your Key to Achieving Optimal Health and Business Success!
-            </span>
-          </h1>
           <div className="mt-6">
             <div className="max-w-5xl m-auto text-center">
               <p className="my-2 text-lg font-medium">
