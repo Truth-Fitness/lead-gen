@@ -4,6 +4,7 @@ import Script from "next/script";
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 import Head from "next/head";
 import Logo from "../components/Logo";
+import NavbarContainer from "../components/Navbar";
 function MyApp({ Component, pageProps, router }: AppProps) {
   if ([`/news`].includes(router.pathname)) {
     return (
@@ -128,11 +129,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     `}
       </Script>
-      <nav className="navbar navbar-expand-lg shadow-lg py-3 bg-gray-800 relative flex items-center w-full justify-between">
-        <div className="px-6 w-full flex flex-wrap items-center justify-between">
-          <Logo />
-        </div>
-      </nav>
+      <NavbarContainer />
       <GoogleReCaptchaProvider
         reCaptchaKey="6LffzxUiAAAAAAnhLy-OrukIg8ZC-Ya3oho1hdf7"
         scriptProps={{
