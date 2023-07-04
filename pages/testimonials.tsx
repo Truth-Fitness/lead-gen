@@ -60,7 +60,7 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8  mt-8 mx-4 ">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8  mt-8 mx-4 pb-20">
             {testimonials.slice(3).map((testimonial) => (
               <TestimonialCard testimonial={testimonial} key={testimonial.id} />
             ))}
