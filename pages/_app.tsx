@@ -3,7 +3,7 @@ import type { AppProps } from "next/app";
 import Script from "next/script";
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 import Head from "next/head";
-import Logo from "../components/Logo";
+
 import NavbarContainer from "../components/Navbar";
 function MyApp({ Component, pageProps, router }: AppProps) {
   if ([`/news`].includes(router.pathname)) {
