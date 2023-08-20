@@ -132,3 +132,15 @@ blockquote cite:before {
   width: 100%;
   height: 100%;
 }
+
+.next-image-container {
+  width: 50vw;
+  height: 50vh;
+  position: relative;
+}
+.next-image-container .next-image {
+  width: 100%;
+  height: 100%;
+  position: relative !important;
+  object-fit: cover;
+}

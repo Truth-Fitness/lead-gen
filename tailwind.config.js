@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  plugins: [require("tw-elements/dist/plugin")],
+  plugins: [
+    require("tw-elements/dist/plugin"),
+    require("@tailwindcss/typography"),
+  ],
   daisyui: {
     themes: [
       {
@@ -45,4 +48,5 @@ module.exports = {
       },
     },
   },
+  important: true,
 };

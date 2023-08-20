@@ -19,6 +19,10 @@ export default function NavbarContainer() {
       href: "/book",
       label: "Book Now",
     },
+    {
+      href: "https://shop.truthfitness.co.uk/",
+      label: "Shop",
+    },
   ];
 
   return (
