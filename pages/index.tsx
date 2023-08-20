@@ -13,6 +13,7 @@ import ResultsComparison from "../components/ResultsComparison";
 import { CldImage } from "next-cloudinary";
 import { CalendlyLink } from "../components/CalendlyLink";
 import FAQ from "../components/FAQ";
+import Script from "next/script";
 
 const Home: NextPage = () => {
   return (
@@ -37,6 +38,7 @@ const Home: NextPage = () => {
         <meta property="og:site_name" content="TRUTH Fitness" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Script id="activatePixel">{`fbq('track', 'ViewContent');`}</Script>
 
       <main className="bg-slate-50">
         <div className="bg-gray-900 relative w-screen">
