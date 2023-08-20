@@ -5,7 +5,7 @@ import CoverImage from "./CoverImage";
 import DateComponent from "./DateComponent";
 
 export default function HeroPost({ post }: { post: Blog }) {
-  const mainImage = post.fields.mainImage;
+  const mainImage = post.fields?.mainImage;
   let mainImageUrl: string | undefined = undefined;
   if (mainImage && "fields" in mainImage) {
     mainImageUrl = mainImage.fields.file?.url;

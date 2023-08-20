@@ -15,7 +15,6 @@ const customMarkdownOptions = () => ({
 });
 
 export default function PostBody({ content }: { content: Document }) {
-  console.log(content)
   return (
     <div className="max-w-4xl mx-auto">
       <div className="prose md:prose-lg lg:prose-xl">

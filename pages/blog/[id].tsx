@@ -13,7 +13,11 @@ export default function Post({ post }: { post: Blog }) {
   if (!router.isFallback && !post) {
     return <ErrorPage statusCode={404} />;
   }
-  const mainImage = post.fields.mainImage;
+  if(!post) {
+    return <h1>Error - No post</h1>
+  }
+
+  const mainImage = post.fields?.mainImage;
   let mainImageUrl: string | undefined = undefined;
   if (mainImage && "fields" in mainImage) {
     mainImageUrl = mainImage.fields.file?.url;
@@ -51,6 +55,8 @@ export const getStaticProps: GetServerSideProps<{
   const id = params?.id;
   if (!id) throw new Error("No id provided");
   const data = await getBlogPostById(params?.id as string);
+  if(!data) throw new Error("No data returned"
+  );
   return {
     props: {
       post: data,

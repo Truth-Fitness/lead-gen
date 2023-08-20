@@ -4,7 +4,7 @@ import DateComponent from "./DateComponent";
 import CoverImage from "./CoverImage";
 
 export default function PostPreview({ post }: { post: Blog }) {
-  const mainImage = post.fields.mainImage;
+  const mainImage = post.fields?.mainImage;
   let mainImageUrl: string | undefined = undefined;
   if (mainImage && "fields" in mainImage) {
     mainImageUrl = mainImage.fields.file?.url;
