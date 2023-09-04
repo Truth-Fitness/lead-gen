@@ -12,10 +12,11 @@ export default function CoverImage({
 }) {
   const image = (
     <ContentfulImage
-      width={2000}
-      height={1000}
       alt={`Cover Image for ${title}`}
-      className={"hover:shadow-medium transition-shadow duration-200"}
+      fill
+      style={{
+        objectFit: "cover",
+      }}
       src={url}
     />
   );
@@ -23,8 +24,12 @@ export default function CoverImage({
   return (
     <div className="sm:mx-0">
       {id ? (
-        <Link href={`/blog/${id}`} aria-label={title} className="cursor-pointer">
-          {image}
+        <Link
+          href={`/blog/${id}`}
+          aria-label={title}
+          className="cursor-pointer"
+        >
+          <div className="relative w-full h-[600px]">{image}</div>
         </Link>
       ) : (
         image

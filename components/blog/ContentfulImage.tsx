@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/future/image";
 
 const contentfulLoader = ({
   src,
@@ -13,7 +13,7 @@ const contentfulLoader = ({
 };
 
 const ContentfulImage = (props: any) => {
-  return <Image loader={contentfulLoader} {...props} />;
+  return <Image loader={contentfulLoader} {...props} alt="" />;
 };
 
 export default ContentfulImage;
