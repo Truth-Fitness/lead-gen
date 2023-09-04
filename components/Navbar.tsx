@@ -16,6 +16,10 @@ export default function NavbarContainer() {
       label: "Testimonials",
     },
     {
+      href: "/blog",
+      label: "Blog",
+    },
+    {
       href: "/book",
       label: "Book Now",
     },

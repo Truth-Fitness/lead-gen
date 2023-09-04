@@ -18,6 +18,7 @@ export default function PostPreview({ post }: { post: Blog }) {
             title={post.fields.title}
             id={post.sys.id}
             url={mainImageUrl}
+            height={400}
           />
         )}
       </div>

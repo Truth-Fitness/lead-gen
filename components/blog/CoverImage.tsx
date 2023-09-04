@@ -5,10 +5,12 @@ export default function CoverImage({
   title,
   url,
   id,
+  height,
 }: {
   title: string;
   url: string;
   id?: string;
+  height?: number;
 }) {
   const image = (
     <ContentfulImage
@@ -29,7 +31,13 @@ export default function CoverImage({
           aria-label={title}
           className="cursor-pointer"
         >
-          <div className="relative w-full h-[600px]">{image}</div>
+          <div
+            className={`relative w-full h-[${
+              height ? height.toString() : "600"
+            }px]`}
+          >
+            {image}
+          </div>
         </Link>
       ) : (
         image
