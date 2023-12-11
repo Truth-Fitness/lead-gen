@@ -14,7 +14,7 @@ export const MaintenancePage = () => {
               Hey,
             </h1>
             <h1 className="text-3xl sm:text-5xl font-extralight text-white uppercase serif tracking-wide ">
-              {`We're working on our exiting new website`}
+              {`We're working on our exciting new website`}
             </h1>
             <h2 className="text-2xl sm:text-3xl font-light text-white uppercase serif tracking-wide mt-4">
               Check back soon
