@@ -29,14 +29,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        truth: {
-          "dark-green": "#163029",
-          "light-green": "#4C6548",
-          "mid-green": "#294635",
-        },
+        "turq-dark": "#006d6d",
+        turq: "#00a0a0",
+        navy: "#001932",
+        "navy-light": "#002c58",
+        red: "#f1666a",
+        "red-dark": "#a95457",
+        green: "#70a482",
+        blue: "#427c9c",
+        orange: "#f7931d",
+        yellow: "#cf9c45",
+        purple: "#5d4c95",
       },
       fontFamily: {
-        sans: ["Outfit", "sans-serif"],
+        sans: ["Montserrat", "sans-serif"],
         serif: ["Bebas Neue", "cursive"],
         impact: ["Oswald", "sans-serif"],
       },
