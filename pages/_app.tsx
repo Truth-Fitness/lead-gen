@@ -7,9 +7,9 @@ import Head from "next/head";
 import NavbarContainer from "../components/Navbar";
 import { MaintenancePage } from "../components/Placeholder";
 function MyApp({ Component, pageProps, router }: AppProps) {
-  if (true) {
-    return <MaintenancePage />;
-  }
+  //if (true) {
+  //  return <MaintenancePage />;
+  //}
   if ([`/news`].includes(router.pathname)) {
     return (
       <div className="bg-turq">
