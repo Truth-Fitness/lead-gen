@@ -5,7 +5,7 @@ import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 import Head from "next/head";
 
 import NavbarContainer from "../components/Navbar";
-import { MaintenancePage } from "../components/Placeholder";
+//import { MaintenancePage } from "../components/Placeholder";
 function MyApp({ Component, pageProps, router }: AppProps) {
   //if (true) {
   //  return <MaintenancePage />;
