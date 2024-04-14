@@ -36,8 +36,10 @@ export const TestimonialCard = ({ testimonial }: Props) => {
         />
       </div>
       <div className="text-center mt-4">
-        <h3 className="text-lg font-bold">{testimonial.name}</h3>
-        <p className="text-sm text-gray-500">{testimonial.title}</p>
+        <h3 className="text-lg font-bold text-truth-mid-green">
+          {testimonial.name}
+        </h3>
+        <p className="text-sm text-truth-dark-rose">{testimonial.title}</p>
       </div>
       <p className="text-gray-600 text-center mt-4">
         {expand

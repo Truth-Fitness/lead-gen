@@ -33,6 +33,9 @@ module.exports = {
           "dark-green": "#163029",
           "light-green": "#4C6548",
           "mid-green": "#294635",
+          "medium-rose": "#8C624C",
+          "light-rose": "#F1D2C0",
+          "dark-rose": "#341D0F",
         },
       },
       fontFamily: {

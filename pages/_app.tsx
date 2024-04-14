@@ -7,12 +7,9 @@ import Head from "next/head";
 import NavbarContainer from "../components/Navbar";
 import { MaintenancePage } from "../components/Placeholder";
 function MyApp({ Component, pageProps, router }: AppProps) {
-  if (true) {
-    return <MaintenancePage />;
-  }
   if ([`/news`].includes(router.pathname)) {
     return (
-      <div className="bg-turq">
+      <div className=" bg-truth-dark-green">
         <Script
           strategy="lazyOnload"
           src={`https://www.googletagmanager.com/gtag/js?id=G-ZQG9EXSZ30`}
@@ -55,6 +52,9 @@ fbq('track', 'PageView');`}
         <Component {...pageProps} />
       </div>
     );
+  }
+  if (true) {
+    return <MaintenancePage />;
   }
   if ([`/ebook`, `/ebook_thank_you`].includes(router.pathname)) {
     return (

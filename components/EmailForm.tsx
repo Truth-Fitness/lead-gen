@@ -3,12 +3,12 @@ import { useEffect } from "react";
 import { useFormFields, useMailChimpForm } from "use-mailchimp-form";
 
 export default function EmailForm({
-  buttonColor = "turq",
+  buttonColor = "green",
   center = false,
   buttonLabel = "Access Now",
   redirect = false,
 }: {
-  buttonColor?: "black" | "turq";
+  buttonColor?: "black" | "green";
   center?: boolean;
   buttonLabel?: string;
   redirect?: boolean;
@@ -77,8 +77,8 @@ export default function EmailForm({
         <button
           type="submit"
           className={`px-6 py-2.5 ${
-            buttonColor === "turq"
-              ? "bg-gradient-to-tl from-navy to-turq hover:to-turq-dark"
+            buttonColor === "green"
+              ? "bg-gradient-to-br from-truth-light-rose from-0% to-truth-dark-rose to-100% via-truth-medium-rose via-70%"
               : "bg-black hover:bg-gray-800"
           } h-12  text-white font-medium text-sm leading-tight uppercase rounded-r shadow-md  hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out`}
         >
