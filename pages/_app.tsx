@@ -41,7 +41,7 @@ fbq('track', 'PageView');`}
           <meta property="og:title" content="Truth Fitness News Letter" />
           <meta
             property="og:image"
-            content="https://truthfitness.co.uk/news-og-image.jpeg"
+            content="https://truthfitness.co.uk/news-og-image.jpg"
           />
           <meta
             property="og:description"
