@@ -18,7 +18,7 @@ const News: NextPage = () => {
           {`IMPROVE YOUR HEALTH & INCREASE BUSINESS PERFORMANCE FAST`}
         </h2>
         <h3 className=" text-2xl md:text-3xl mt-8 mb-4">
-          Join 3,000+ high performers in our weekly newsletter
+          Join 10,000+ high performers in our weekly newsletter
         </h3>
         <EmailForm
           buttonColor={"green"}
