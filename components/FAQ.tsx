@@ -13,7 +13,9 @@ const FAQ: React.FunctionComponent<{ question: string; answer: string }> = ({
         className="flex justify-between items-center cursor-pointer"
         onClick={() => setOpen(!open)}
       >
-        <h4 className="text-lg md:text-xl font-bold text-navy">{question}</h4>
+        <h4 className="text-lg md:text-xl font-bold text-truth-dark-green">
+          {question}
+        </h4>
         <div className="flex items-center">
           {open ? (
             <MdExpandLess className="text-turq h-8 w-8" />
@@ -24,7 +26,7 @@ const FAQ: React.FunctionComponent<{ question: string; answer: string }> = ({
       </div>
       {open && (
         <div className="mt-4">
-          <p className="text-navy md:text-lg">{answer}</p>
+          <p className=" md:text-lg">{answer}</p>
         </div>
       )}
     </div>

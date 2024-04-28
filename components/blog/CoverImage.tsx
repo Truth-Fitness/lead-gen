@@ -18,6 +18,8 @@ export default function CoverImage({
       fill
       style={{
         objectFit: "cover",
+        // desaturate filter
+        filter: "grayscale(100%) contrast(1.3)",
       }}
       src={url}
     />

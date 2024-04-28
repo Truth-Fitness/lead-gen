@@ -6,7 +6,7 @@ type Props = {
 
 export const TextContainer: React.FunctionComponent<Props> = ({ children }) => {
   return (
-    <div className="border-2 border-turq text-navy rounded-tl-lg rounded-br-lg p-3 mb-4 mt-4 bg-white">
+    <div className=" text-white rounded-tl-lg rounded-br-lg shadow p-3 mb-4 mt-4 bg-truth-mid-green">
       {children}
     </div>
   );

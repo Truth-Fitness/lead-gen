@@ -10,14 +10,16 @@ const Feature: React.FunctionComponent<Props> = ({
   description,
 }) => {
   return (
-    <div className="rounded shadow bg-white p-3 md:p-6">
+    <div className="rounded-xl shadow bg-truth-dark-green p-3 md:p-6">
       <div className="w-full flex justify-center text-4xl mb-4">
-        <div className="rounded-full bg-gradient-to-br shadow-md from-turq via-turq-dark to-navy text-white w-16 h-16 flex justify-center items-center">
+        <div className="rounded-full bg-gradient-to-tl shadow-md from-truth-dark-rose via-truth-medium-rose to-truth-light-rose text-white w-16 h-16 flex justify-center items-center">
           {index}
         </div>
       </div>
-      <h3 className="text-center font-bold">{title}</h3>
-      <p className="text-center">{description}</p>
+      <h3 className="text-center font-semibold uppercase tracking-wider text-white mb-2">
+        {title}
+      </h3>
+      <p className="text-center text-white text-sm">{description}</p>
     </div>
   );
 };

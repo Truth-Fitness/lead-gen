@@ -22,9 +22,9 @@ export default function HeroPost({ post }: { post: Blog }) {
           />
         )}
       </div>
-      <div className="md:grid  md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
+      <div className="md:grid  md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28 text-white">
         <div>
-          <h3 className="mb-4 text-4xl lg:text-6xl leading-tight">
+          <h3 className="mb-4 text-3xl lg:text-6xl leading-tight font-semibold uppercase tracking-wide">
             <Link href={`/blog/${post.sys.id}`} className="hover:underline">
               {post.fields.title}
             </Link>

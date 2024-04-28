@@ -53,9 +53,9 @@ fbq('track', 'PageView');`}
       </div>
     );
   }
-  if (true) {
-    return <MaintenancePage />;
-  }
+  // if (true) {
+  //   return <MaintenancePage />;
+  // }
   if ([`/ebook`, `/ebook_thank_you`].includes(router.pathname)) {
     return (
       <div>

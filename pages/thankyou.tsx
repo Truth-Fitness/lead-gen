@@ -14,10 +14,10 @@ const ThankYou: NextPage = () => {
   }, []);
 
   return (
-    <div className="bg-gray-900 relative w-screen h-screen ">
+    <div className="bg-truth-dark-green relative w-screen h-screen ">
       <div className="flex items-center flex-wrap-reverse px-5 pt-10 pb-10 max-w-[1400px] m-auto">
         <div className="lg:w-6/12 w-full">
-          <h1 className="text-4xl md:text-5xl font-bold  text-white my-4 md:mb-2">
+          <h1 className="text-3xl md:text-5xl font-bold uppercase text-white my-4 md:mb-2">
             Thank You!
           </h1>
           <p className="text-lg uppercase tracking-wider text-gray-300  mb-2">
