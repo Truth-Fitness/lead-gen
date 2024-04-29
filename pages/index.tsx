@@ -40,87 +40,64 @@ const Home: NextPage = () => {
       </Head>
       <Script id="activatePixel">{`fbq('track', 'ViewContent');`}</Script>
 
-      <main className="bg-slate-50">
-        <div className="bg-gray-900 relative w-screen">
+      <main>
+        <div className="bg-truth-dark-green relative w-screen">
           <div className="flex items-center flex-wrap-reverse px-5 pt-10 pb-24 max-w-[1600px] m-auto gap-4 justify-around">
             <div className="lg:w-6/12 w-full">
-              <h1 className="text-4xl md:text-5xl font-bold  text-white my-4 md:mb-2">
+              <h1 className="text-4xl md:text-5xl font-semibold tracking-wide  text-white my-4 md:mb-2 uppercase">
                 Unleashing the <span className="text-red">Top Five</span> Steps
                 to Becoming a Healthy Business Leader
               </h1>
-              <p className="text-lg uppercase tracking-wider text-gray-300  mb-2">
+              <p className="text-lg uppercase tracking-wider text-white mb-2">
                 Discover how to:
               </p>
-              <ol className="ml-8 list-decimal text-xl font-semibold  text-[#00c6c6]">
+              <ol className="ml-8 list-decimal text-xl   text-white">
                 <li>
                   How to become a healthy business leader in five simple steps
                 </li>
                 <li>How to lose weight + boost immunity</li>
                 <li>How to improve sleep and skyrocket your energy</li>
               </ol>
-              <p className="mt-6 max-w-2xl text-gray-200 uppercase font-impact text-2xl ">
+              <p className="mt-6 max-w-2xl text-white uppercase text-2xl ">
                 Download your free ebook now
               </p>
               <div className="w-full my-6">
                 <EmailForm />
               </div>
-              <ul className="flex gap-2  md:gap-4 items-center">
-                <li className="flex items-center text-gray-300 gap-2">
+              <ul className="flex gap-2  md:gap-4 items-center text-white">
+                <li className="flex items-center gap-2">
                   <MdCheck className="text-red" />
                   <p>5 Secrets</p>
                 </li>
-                <li className="flex items-center text-gray-300 gap-2">
+                <li className="flex items-center  gap-2">
                   <MdCheck className="text-red" />
                   Get Our VIP Strategy
                 </li>
-                <li className="flex items-center text-gray-300 gap-2">
+                <li className="flex items-center  gap-2">
                   <MdCheck className="text-red" />
                   Clear Simple Effective
                 </li>
               </ul>
             </div>
             <div className="lg:w-5/12 w-full ">
-              <div className="md:mx-3 shadow">
+              <div className="md:mx-3  ">
                 <CldImage
-                  src="truth-lead-gen/ebook_cover_dkyz3v"
+                  src="truth-lead-gen/imageedit_2_9721529056_xhonbq"
                   alt="Ebook"
                   height={"600px"}
                   width={"425px"}
-                  objectFit="cover"
+                  objectFit="contain"
                 />
               </div>
             </div>
           </div>
-          <div className="custom-shape-divider-bottom-1675285807">
-            <svg
-              data-name="Layer 1"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1200 120"
-              preserveAspectRatio="none"
-            >
-              <path
-                d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
-                opacity=".25"
-                className="shape-fill"
-              ></path>
-              <path
-                d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
-                opacity=".5"
-                className="shape-fill"
-              ></path>
-              <path
-                d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
-                className="shape-fill"
-              ></path>
-            </svg>
-          </div>
         </div>
-        <div className="flex justify-center flex-wrap mt-10 md:mb-20 items-center p-4 bg-slate-50">
+        <div className="flex justify-center flex-wrap pt-10 md:mb-20 items-center p-4">
           <div className="w-full lg:w-5/12">
-            <p className="text-red font-bold mb-5">
+            <p className="text-truth-mid-green font-bold mb-5">
               FED UP WITH FEELING THIS WAY?
             </p>
-            <h2 className="text-3xl text-turq font-bold mb-7">
+            <h2 className="text-3xl text-truth-dark-green font-bold mb-7">
               {`You're fully dedicated to achieving business success and have been relentlessly focused on it for as long as you can remember.`}
             </h2>
             <TextContainer>
@@ -198,27 +175,12 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className="relative bg-gradient-to-t from-black to-navy mt-10">
-          <div className="custom-shape-divider-top-1675529624">
-            <svg
-              data-name="Layer 1"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1200 120"
-              preserveAspectRatio="none"
-            >
-              <path
-                d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
-                className="shape-fill"
-              ></path>
-            </svg>
-          </div>
+        <div className="relative bg-gradient-to-t from-truth-dark-green to-truth-light-green">
           <div className="flex justify-center ">
             <div className="max-w-[1300px]">
-              <h2 className="text-4xl font-bold text-white text-center mt-20 mx-2">
-                <span className="text-transparent bg-clip-text bg-gradient-to-b from-turq to-turq-dark">
-                  Rapid, Sustainable Results
-                </span>{" "}
-                for Business Owners and Senior Executives
+              <h2 className="text-3xl font-bold text-white text-center mt-20 mx-2 uppercase">
+                Rapid, Sustainable Results for Business Owners and Senior
+                Executives
               </h2>
               <div className="flex md:flex-nowrap flex-wrap mt-10 justify-between mx-4 gap-4">
                 {/* <ReactPlayer
@@ -281,7 +243,7 @@ const Home: NextPage = () => {
           </div>
         </div>
         <div className="max-w-[1300px] m-auto py-8">
-          <h2 className="text-4xl font-bold text-navy text-center my-4">
+          <h2 className="text-4xl font-bold text-truth-dark-green text-center my-4 uppercase tracking-wide">
             Frequently Asked Questions
           </h2>
           <div className="flex flex-col gap-5 my-8 px-4">

@@ -15,17 +15,19 @@ const ResultsComparison: React.FunctionComponent = () => {
             <div
               className={`${
                 selectResult.id === result.id
-                  ? "bg-navy-light text-turq md:-mr-6 md:pr-6"
-                  : "bg-navy text-turq "
+                  ? "bg-white text-turq md:-mr-6 md:pr-6"
+                  : "bg-truth-off-white text-turq "
               } mb-4 md:p-5 p-4 rounded flex items-center  shadow-lg gap-4 hover:bg-navy-light hover:text-white`}
               key={result.id}
               onClick={() => setSelectResult(result)}
             >
               <div className="md:w-32 shrink-0">
-                <h4 className="md:text-xl text-lg font-bold">{result.name}</h4>
-                <p className="text-sm">{result.title}</p>
+                <h4 className="md:text-xl text-lg text-truth-dark-green font-bold">
+                  {result.name}
+                </h4>
+                <p className="text-sm text-truth-mid-green">{result.title}</p>
               </div>
-              <p className="text-white ml-2 text-right grow">
+              <p className="text-truth-dark-green ml-2 text-right grow">
                 {result.description}
               </p>
             </div>

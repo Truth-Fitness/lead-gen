@@ -5,7 +5,6 @@ import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 import Head from "next/head";
 
 import NavbarContainer from "../components/Navbar";
-import { MaintenancePage } from "../components/Placeholder";
 function MyApp({ Component, pageProps, router }: AppProps) {
   if ([`/news`].includes(router.pathname)) {
     return (
@@ -53,9 +52,9 @@ fbq('track', 'PageView');`}
       </div>
     );
   }
-  if (true) {
-    return <MaintenancePage />;
-  }
+  // if (true) {
+  //   return <MaintenancePage />;
+  // }
   if ([`/ebook`, `/ebook_thank_you`].includes(router.pathname)) {
     return (
       <div>

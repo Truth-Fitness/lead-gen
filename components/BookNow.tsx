@@ -21,7 +21,7 @@ export default function BookNow({
         type="button"
         className={`inline-block px-6 py-2.5 ${
           fullWidth ? "w-full   " : ""
-        } text-white bg-turq rounded-full hover:bg-turq-dark font-bold text-lg leading-tight uppercase  focus:outline-none focus:ring-0 transition duration-150 ease-in-out cursor-pointer`}
+        } text-white bg-truth-medium-rose rounded-full hover:bg-truth-dark-rose font-bold text-lg leading-tight uppercase  focus:outline-none focus:ring-0 transition duration-150 ease-in-out cursor-pointer`}
         data-bs-toggle="modal"
         data-bs-target="#bookNowModal"
       >

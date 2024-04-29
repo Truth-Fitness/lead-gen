@@ -30,12 +30,12 @@ export default function NavbarContainer() {
   ];
 
   return (
-    <header className="bg-gray-800 shadow-md  relative">
-      <div className="mx-auto flex h-16 max-w-screen-2xl items-center gap-8 px-4 sm:px-6 lg:px-8">
+    <header className=" bg-truth-dark-green shadow-md  relative">
+      <div className="mx-auto flex h-32 max-w-screen-2xl items-center gap-16 px-4 sm:px-6 lg:px-8">
         <Link className="block" href="/">
           <div>
             <span className="sr-only">Home</span>
-            <Logo height={70} />
+            <Logo height={70} cursor={"pointer"} />
           </div>
         </Link>
 
@@ -45,7 +45,7 @@ export default function NavbarContainer() {
               {links.map((link) => (
                 <li
                   key={link.href}
-                  className="text-gray-200 hover:text-gray-300"
+                  className="text-gray-200 hover:text-gray-300 font-extralight uppercase tracking-wider"
                 >
                   <Link href={link.href}>{link.label}</Link>
                 </li>
@@ -55,7 +55,7 @@ export default function NavbarContainer() {
 
           <div className="flex items-center gap-4">
             <button
-              className="block rounded bg-gray-700 hover:bg-gray-900 p-2.5 text-gray-200 transition hover:text-gray-300 md:hidden"
+              className="block rounded bg-truth-dark-green hover:bg-truth-mid-green p-2.5 text-gray-200 transition hover:text-gray-300 md:hidden"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               <span className="sr-only">Toggle menu</span>
@@ -84,7 +84,7 @@ export default function NavbarContainer() {
               {links.map((link) => (
                 <li
                   key={link.href}
-                  className="text-gray-200 hover:text-gray-300"
+                  className="text-gray-200 hover:text-gray-300 font-extralight uppercase tracking-wider"
                 >
                   <Link href={link.href}>{link.label}</Link>
                 </li>

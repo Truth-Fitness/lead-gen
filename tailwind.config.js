@@ -36,6 +36,7 @@ module.exports = {
           "medium-rose": "#8C624C",
           "light-rose": "#F1D2C0",
           "dark-rose": "#341D0F",
+          "off-white": "#EBEBEB",
         },
       },
       fontFamily: {

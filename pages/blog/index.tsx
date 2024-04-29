@@ -11,12 +11,12 @@ export default function Index({
   const morePosts = allPosts.slice(1);
 
   return (
-    <>
-      <div className="container mx-auto px-5 max-w-6xl m-10">
+    <div className="bg-truth-dark-green">
+      <div className="container mx-auto px-5 max-w-6xl p-10 ">
         {heroPost && <HeroPost post={heroPost} />}
         {morePosts.length > 0 && <MorePosts posts={morePosts} />}
       </div>
-    </>
+    </div>
   );
 }
 
