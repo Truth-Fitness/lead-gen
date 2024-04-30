@@ -168,7 +168,6 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 fbq('init', '470164566879882');
 fbq('track', 'PageView');`}
       </Script>
-      <NavbarContainer />
       <GoogleReCaptchaProvider
         reCaptchaKey="6LffzxUiAAAAAAnhLy-OrukIg8ZC-Ya3oho1hdf7"
         scriptProps={{
@@ -178,6 +177,28 @@ fbq('track', 'PageView');`}
           nonce: undefined,
         }}
       >
+        <Head>
+          <title>TRUTH Fitness - The home of human-first fitness.</title>
+          <meta
+            name="description"
+            content="Our mission is to help people achieve their goals and live healthier, happier lives by providing expert guidance and inspiration in nutrition, fitness, and habit optimisation."
+          />
+          <meta
+            name="keywords"
+            content="fitness, health, nutrition, habit optimisation, personal training"
+          />
+          <meta
+            property="og:title"
+            content="TRUTH Fitness - The home of human-first fitness."
+          />
+          <meta
+            property="og:description"
+            content="Our mission is to help people achieve their goals and live healthier, happier lives by providing expert guidance and inspiration in nutrition, fitness, and habit optimisation."
+          />
+          <meta property="og:url" content="https://truthfitness.co.uk/" />
+        </Head>
+        <NavbarContainer />
+
         <div className=" m-auto">
           <Component {...pageProps} />
         </div>
