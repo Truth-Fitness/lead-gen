@@ -19,14 +19,14 @@ const Presentation: React.FunctionComponent = () => {
         />
       </div>
       <div className="md:w-6/12">
-        <p className="text-red font-bold mb-5">
+        <p className="text-truth-medium-rose font-semibold mb-5">
           INTRODUCING THE SIX-WEEK RAPID RESULT SYSTEM
         </p>
-        <h3 className="text-2xl font-bold text-turq mb-3">
+        <h3 className="text-2xl font-semibold text-truth-dark-green mb-3 uppercase">
           A six-week online guaranteed results coaching programme built for
           business leaders{" "}
         </h3>
-        <p className="text-gray-600">
+        <p>
           For business leaders that demand the best results as fast as possible,
           with as little impact on their busy schedules
         </p>
@@ -47,7 +47,7 @@ const Presentation: React.FunctionComponent = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <h4 className="text-xl font-bold text-navy mt-5 mb-3">
+          <h4 className="text-xl font-semibold uppercase text-truth-dark-green mt-5 mb-3">
             {step.title}
           </h4>
           <p className="transition ease-in-out duration-500">{step.content}</p>

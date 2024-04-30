@@ -39,7 +39,7 @@ export default function EbookPopup({
         className="fixed z-50 pt-[100px] left-0 top-0 w-full h-full overflow-auto bg-black bg-opacity-40"
       >
         <div className="bg-white m-auto p-5 w-fit shadow-lg ring-1 ring-black ring-opacity-5 md:rounded relative">
-          <h2 className="text-black text-3xl mb-2 font-bold text-center font-impact">
+          <h2 className="text-truth-dark-green text-3xl mb-2 font-bold text-center">
             FREE EBOOK
           </h2>
           <p className="text-center mb-5">
@@ -89,7 +89,7 @@ export default function EbookPopup({
                 <div className="w-full flex justify-center">
                   <button
                     type="submit"
-                    className=" px-6 py-2.5 w-full bg-turq text-white font-medium text-sm leading-tight uppercase rounded-full shadow-md hover:bg-turq-dark hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out"
+                    className=" px-6 py-2.5 w-full bg-truth-mid-green text-white font-medium text-sm leading-tight uppercase rounded-full shadow-md hover:bg-truth-dark-green hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out"
                   >
                     Submit
                   </button>
@@ -104,7 +104,7 @@ export default function EbookPopup({
             onClick={() => {
               setPopup(false);
             }}
-            className="absolute top-2 right-2 inline-block p-2  text-turq font-bold text-sm leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+            className="absolute top-2 right-2 inline-block p-2  text-truth-dark-green font-bold text-sm leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
           >
             <MdClose />
           </button>

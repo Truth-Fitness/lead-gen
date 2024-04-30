@@ -28,9 +28,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-slate-50">
+      <main className="bg-truth-dark-green">
         <div className="relative max-w-6xl m-auto">
-          <h2 className="text-6xl text-center font-bold font-impact pt-20 pb-8">
+          <h2 className="text-6xl text-center font-bold uppercase tracking-wide pt-20 pb-8 text-white">
             Testimonials
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8  mt-8 mx-4 ">
@@ -38,8 +38,8 @@ const Home: NextPage = () => {
               <TestimonialCard testimonial={testimonial} key={testimonial.id} />
             ))}
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8 mx-4 ">
-            <div className="p-4 rounded shadow ring-1 ring-black ring-opacity-5">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8 mx-4 bg-truth-light-green rounded shadow">
+            <div className="p-4 rounded">
               <div className="video-container">
                 <iframe
                   src="https://www.youtube.com/embed/-TiugingDko"
@@ -49,7 +49,7 @@ const Home: NextPage = () => {
                 />
               </div>
             </div>
-            <div className="p-4 rounded shadow ring-1 ring-black ring-opacity-5">
+            <div className="p-4 rounded">
               <div className="video-container">
                 <iframe
                   src="https://www.youtube.com/embed/zJo5OYvfNro"
