@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },
@@ -14,6 +15,7 @@
     "framer-motion": "^9.0.0",
     "next": "12.3.0",
     "next-cloudinary": "^4.0.0",
+    "next-sitemap": "^4.2.3",
     "node-mailjet": "^5.1.1",
     "nuka-carousel": "^5.4.0",
     "react": "18.2.0",

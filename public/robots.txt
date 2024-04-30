@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://truthfitness.co.uk
+
+# Sitemaps
+Sitemap: https://truthfitness.co.uk/sitemap.xml
