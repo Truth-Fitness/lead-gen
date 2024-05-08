@@ -19,22 +19,26 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Truth Fitness</title>
+        <title>TRUTH Fitness - The home of human-first fitness.</title>
         <meta
           name="description"
-          content="Top Five Secrets to Rapid Weightloss"
+          content="Our mission is to help people achieve their goals and live healthier, happier lives by providing expert guidance and inspiration in nutrition, fitness, and habit optimisation."
         />
-        <meta property="og:type" content="website" />
-        <meta property="og:locale" content="en_GB" />
+        <meta
+          name="keywords"
+          content="fitness, health, nutrition, habit optimisation, personal training"
+        />
         <meta
           property="og:title"
-          content="Personal Training for Business Leaders · TRUTH Fitness"
+          content="TRUTH Fitness - The home of human-first fitness."
         />
         <meta
           property="og:description"
-          content="Experts in Personal Training for Business Leaders, Senior Executives and their teams. Book a FREE strategy call with our expert Personal Trainers · TRUTH® Fitness"
+          content="Our mission is to help people achieve their goals and live healthier, happier lives by providing expert guidance and inspiration in nutrition, fitness, and habit optimisation."
         />
         <meta property="og:url" content="https://truthfitness.co.uk/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_GB" />
         <meta property="og:site_name" content="TRUTH Fitness" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
