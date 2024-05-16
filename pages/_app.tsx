@@ -169,7 +169,7 @@ fbq('init', '470164566879882');
 fbq('track', 'PageView');`}
       </Script>
       <Script id="adsense" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2625229241336957"
-     crossorigin="anonymous"></Script>
+     crossOrigin="anonymous"></Script>
       <GoogleReCaptchaProvider
         reCaptchaKey="6LffzxUiAAAAAAnhLy-OrukIg8ZC-Ya3oho1hdf7"
         scriptProps={{
