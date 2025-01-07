@@ -14,7 +14,7 @@ export default function EmailForm({
   redirect?: boolean;
 }) {
   const { loading, error, success, message, handleSubmit } = useMailChimpForm(
-    "https://truthfitness.us17.list-manage.com/subscribe/post?u=d195bca7b15b09591a2869256&amp;id=aded1396d7&amp;f_id=001261e0f0"
+    "https://truthfitness.us17.list-manage.com/subscribe/post?u=d195bca7b15b09591a2869256&amp;id=12ff7a1116&amp;v_id=4713&amp;f_id=005150e0f0"
   );
   const { fields, handleFieldChange } = useFormFields({
     EMAIL: "",
