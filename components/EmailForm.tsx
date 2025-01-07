@@ -20,6 +20,7 @@ export default function EmailForm({
     EMAIL: "",
     FNAME: "",
     LNAME: "",
+    tags: "6585241,6585285",
   });
 
   useEffect(() => {

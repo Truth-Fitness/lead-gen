@@ -19,7 +19,7 @@ export default function EbookPopup({
     EMAIL: "",
     FNAME: "",
     LNAME: "",
-    tags: "6449266",
+    tags: "6585241,6585285",
   });
 
   useEffect(() => {
