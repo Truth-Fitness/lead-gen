@@ -45,7 +45,7 @@ const Home: NextPage = () => {
       <Script id="activatePixel">{`fbq('track', 'ViewContent');`}</Script>
 
       <main>
-        <div className="bg-truth-dark-green relative w-screen">
+        {/* <div className="bg-truth-dark-green relative w-screen">
           <div className="flex items-center flex-wrap-reverse px-5 pt-10 pb-24 max-w-[1600px] m-auto gap-4 justify-around">
             <div className="lg:w-6/12 w-full">
               <h1 className="text-4xl md:text-5xl font-semibold tracking-wide  text-white my-4 md:mb-2 uppercase">
@@ -95,7 +95,7 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="flex justify-center flex-wrap pt-10 md:mb-20 items-center p-4">
           <div className="w-full lg:w-5/12">
             <p className="text-truth-mid-green font-bold mb-5">
