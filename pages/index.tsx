@@ -43,6 +43,8 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Script id="activatePixel">{`fbq('track', 'ViewContent');`}</Script>
+      <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6848766051417011"
+     crossOrigin="anonymous"></Script>
 
       <main>
         {/* <div className="bg-truth-dark-green relative w-screen">
