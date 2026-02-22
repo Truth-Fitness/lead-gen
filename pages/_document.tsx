@@ -16,6 +16,7 @@ export default function Document() {
           crossOrigin="true"
         />
         <Script src="https://link.localbestgyms.com/js/form_embed.js"></Script>
+        <meta name="google-adsense-account" content="ca-pub-6848766051417011"></meta>
       </Head>
       <body>
         <Main />
